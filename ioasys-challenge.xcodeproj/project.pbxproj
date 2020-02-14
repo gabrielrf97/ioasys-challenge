@@ -15,6 +15,13 @@
 		C0532C3623F705FD002D59A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0532C3423F705FD002D59A3 /* LaunchScreen.storyboard */; };
 		C0532C4123F705FD002D59A3 /* ioasys_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C4023F705FD002D59A3 /* ioasys_challengeTests.swift */; };
 		C0532C4C23F705FE002D59A3 /* ioasys_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C4B23F705FE002D59A3 /* ioasys_challengeUITests.swift */; };
+		C0532C5D23F706AF002D59A3 /* BusinessMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C5C23F706AF002D59A3 /* BusinessMan.swift */; };
+		C0532C5F23F706B8002D59A3 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C5E23F706B8002D59A3 /* Company.swift */; };
+		C0532C6123F70811002D59A3 /* CompanyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6023F70811002D59A3 /* CompanyType.swift */; };
+		C0532C6323F7259F002D59A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6223F7259F002D59A3 /* LoginViewController.swift */; };
+		C0532C6623F725B9002D59A3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0532C6523F725B9002D59A3 /* Login.storyboard */; };
+		C0532C6823F725CE002D59A3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6723F725CE002D59A3 /* LoginViewModel.swift */; };
+		C0532C6B23F7359C002D59A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6A23F7359C002D59A3 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		C0532C4723F705FE002D59A3 /* ioasys-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ioasys-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0532C4B23F705FE002D59A3 /* ioasys_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasys_challengeUITests.swift; sourceTree = "<group>"; };
 		C0532C4D23F705FE002D59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0532C5C23F706AF002D59A3 /* BusinessMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMan.swift; sourceTree = "<group>"; };
+		C0532C5E23F706B8002D59A3 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		C0532C6023F70811002D59A3 /* CompanyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyType.swift; sourceTree = "<group>"; };
+		C0532C6223F7259F002D59A3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C0532C6523F725B9002D59A3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		C0532C6723F725CE002D59A3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C0532C6A23F7359C002D59A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,9 @@
 		C0532C2823F705FA002D59A3 /* ioasys-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				C0532C5B23F70699002D59A3 /* Helpers */,
+				C0532C5A23F70690002D59A3 /* Modules */,
+				C0532C5923F7068B002D59A3 /* Models */,
 				C0532C2923F705FA002D59A3 /* AppDelegate.swift */,
 				C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */,
 				C0532C2D23F705FA002D59A3 /* ViewController.swift */,
@@ -126,6 +143,42 @@
 				C0532C4D23F705FE002D59A3 /* Info.plist */,
 			);
 			path = "ioasys-challengeUITests";
+			sourceTree = "<group>";
+		};
+		C0532C5923F7068B002D59A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0532C5C23F706AF002D59A3 /* BusinessMan.swift */,
+				C0532C5E23F706B8002D59A3 /* Company.swift */,
+				C0532C6023F70811002D59A3 /* CompanyType.swift */,
+				C0532C6A23F7359C002D59A3 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0532C5A23F70690002D59A3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C0532C6423F725A6002D59A3 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C0532C5B23F70699002D59A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C0532C6423F725A6002D59A3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C0532C6223F7259F002D59A3 /* LoginViewController.swift */,
+				C0532C6523F725B9002D59A3 /* Login.storyboard */,
+				C0532C6723F725CE002D59A3 /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0532C6623F725B9002D59A3 /* Login.storyboard in Resources */,
 				C0532C3623F705FD002D59A3 /* LaunchScreen.storyboard in Resources */,
 				C0532C3323F705FD002D59A3 /* Assets.xcassets in Resources */,
 				C0532C3123F705FA002D59A3 /* Main.storyboard in Resources */,
@@ -259,8 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0532C6323F7259F002D59A3 /* LoginViewController.swift in Sources */,
+				C0532C5D23F706AF002D59A3 /* BusinessMan.swift in Sources */,
 				C0532C2E23F705FA002D59A3 /* ViewController.swift in Sources */,
 				C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */,
+				C0532C6823F725CE002D59A3 /* LoginViewModel.swift in Sources */,
+				C0532C6B23F7359C002D59A3 /* User.swift in Sources */,
+				C0532C6123F70811002D59A3 /* CompanyType.swift in Sources */,
+				C0532C5F23F706B8002D59A3 /* Company.swift in Sources */,
 				C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
