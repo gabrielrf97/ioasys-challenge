@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2923F705FA002D59A3 /* AppDelegate.swift */; };
+		C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */; };
+		C0532C2E23F705FA002D59A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2D23F705FA002D59A3 /* ViewController.swift */; };
+		C0532C3123F705FA002D59A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0532C2F23F705FA002D59A3 /* Main.storyboard */; };
+		C0532C3323F705FD002D59A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0532C3223F705FD002D59A3 /* Assets.xcassets */; };
+		C0532C3623F705FD002D59A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0532C3423F705FD002D59A3 /* LaunchScreen.storyboard */; };
+		C0532C4123F705FD002D59A3 /* ioasys_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C4023F705FD002D59A3 /* ioasys_challengeTests.swift */; };
+		C0532C4C23F705FE002D59A3 /* ioasys_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C4B23F705FE002D59A3 /* ioasys_challengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0532C3D23F705FD002D59A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0532C1E23F705FA002D59A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0532C2523F705FA002D59A3;
+			remoteInfo = "ioasys-challenge";
+		};
+		C0532C4823F705FE002D59A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0532C1E23F705FA002D59A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0532C2523F705FA002D59A3;
+			remoteInfo = "ioasys-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0532C2623F705FA002D59A3 /* ioasys-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioasys-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0532C2923F705FA002D59A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C0532C2D23F705FA002D59A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0532C3023F705FA002D59A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0532C3223F705FD002D59A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0532C3523F705FD002D59A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0532C3723F705FD002D59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0532C3C23F705FD002D59A3 /* ioasys-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ioasys-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0532C4023F705FD002D59A3 /* ioasys_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasys_challengeTests.swift; sourceTree = "<group>"; };
+		C0532C4223F705FD002D59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0532C4723F705FE002D59A3 /* ioasys-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ioasys-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0532C4B23F705FE002D59A3 /* ioasys_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasys_challengeUITests.swift; sourceTree = "<group>"; };
+		C0532C4D23F705FE002D59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0532C2323F705FA002D59A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0532C3923F705FD002D59A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0532C4423F705FE002D59A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0532C1D23F705FA002D59A3 = {
+			isa = PBXGroup;
+			children = (
+				C0532C2823F705FA002D59A3 /* ioasys-challenge */,
+				C0532C3F23F705FD002D59A3 /* ioasys-challengeTests */,
+				C0532C4A23F705FE002D59A3 /* ioasys-challengeUITests */,
+				C0532C2723F705FA002D59A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0532C2723F705FA002D59A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0532C2623F705FA002D59A3 /* ioasys-challenge.app */,
+				C0532C3C23F705FD002D59A3 /* ioasys-challengeTests.xctest */,
+				C0532C4723F705FE002D59A3 /* ioasys-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0532C2823F705FA002D59A3 /* ioasys-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				C0532C2923F705FA002D59A3 /* AppDelegate.swift */,
+				C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */,
+				C0532C2D23F705FA002D59A3 /* ViewController.swift */,
+				C0532C2F23F705FA002D59A3 /* Main.storyboard */,
+				C0532C3223F705FD002D59A3 /* Assets.xcassets */,
+				C0532C3423F705FD002D59A3 /* LaunchScreen.storyboard */,
+				C0532C3723F705FD002D59A3 /* Info.plist */,
+			);
+			path = "ioasys-challenge";
+			sourceTree = "<group>";
+		};
+		C0532C3F23F705FD002D59A3 /* ioasys-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0532C4023F705FD002D59A3 /* ioasys_challengeTests.swift */,
+				C0532C4223F705FD002D59A3 /* Info.plist */,
+			);
+			path = "ioasys-challengeTests";
+			sourceTree = "<group>";
+		};
+		C0532C4A23F705FE002D59A3 /* ioasys-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0532C4B23F705FE002D59A3 /* ioasys_challengeUITests.swift */,
+				C0532C4D23F705FE002D59A3 /* Info.plist */,
+			);
+			path = "ioasys-challengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0532C2523F705FA002D59A3 /* ioasys-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0532C5023F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challenge" */;
+			buildPhases = (
+				C0532C2223F705FA002D59A3 /* Sources */,
+				C0532C2323F705FA002D59A3 /* Frameworks */,
+				C0532C2423F705FA002D59A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ioasys-challenge";
+			productName = "ioasys-challenge";
+			productReference = C0532C2623F705FA002D59A3 /* ioasys-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0532C3B23F705FD002D59A3 /* ioasys-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0532C5323F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challengeTests" */;
+			buildPhases = (
+				C0532C3823F705FD002D59A3 /* Sources */,
+				C0532C3923F705FD002D59A3 /* Frameworks */,
+				C0532C3A23F705FD002D59A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0532C3E23F705FD002D59A3 /* PBXTargetDependency */,
+			);
+			name = "ioasys-challengeTests";
+			productName = "ioasys-challengeTests";
+			productReference = C0532C3C23F705FD002D59A3 /* ioasys-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0532C4623F705FE002D59A3 /* ioasys-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0532C5623F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challengeUITests" */;
+			buildPhases = (
+				C0532C4323F705FE002D59A3 /* Sources */,
+				C0532C4423F705FE002D59A3 /* Frameworks */,
+				C0532C4523F705FE002D59A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0532C4923F705FE002D59A3 /* PBXTargetDependency */,
+			);
+			name = "ioasys-challengeUITests";
+			productName = "ioasys-challengeUITests";
+			productReference = C0532C4723F705FE002D59A3 /* ioasys-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0532C1E23F705FA002D59A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Gabriel;
+				TargetAttributes = {
+					C0532C2523F705FA002D59A3 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					C0532C3B23F705FD002D59A3 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = C0532C2523F705FA002D59A3;
+					};
+					C0532C4623F705FE002D59A3 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = C0532C2523F705FA002D59A3;
+					};
+				};
+			};
+			buildConfigurationList = C0532C2123F705FA002D59A3 /* Build configuration list for PBXProject "ioasys-challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0532C1D23F705FA002D59A3;
+			productRefGroup = C0532C2723F705FA002D59A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0532C2523F705FA002D59A3 /* ioasys-challenge */,
+				C0532C3B23F705FD002D59A3 /* ioasys-challengeTests */,
+				C0532C4623F705FE002D59A3 /* ioasys-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0532C2423F705FA002D59A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0532C3623F705FD002D59A3 /* LaunchScreen.storyboard in Resources */,
+				C0532C3323F705FD002D59A3 /* Assets.xcassets in Resources */,
+				C0532C3123F705FA002D59A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0532C3A23F705FD002D59A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0532C4523F705FE002D59A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0532C2223F705FA002D59A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0532C2E23F705FA002D59A3 /* ViewController.swift in Sources */,
+				C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */,
+				C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0532C3823F705FD002D59A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0532C4123F705FD002D59A3 /* ioasys_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0532C4323F705FE002D59A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0532C4C23F705FE002D59A3 /* ioasys_challengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0532C3E23F705FD002D59A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0532C2523F705FA002D59A3 /* ioasys-challenge */;
+			targetProxy = C0532C3D23F705FD002D59A3 /* PBXContainerItemProxy */;
+		};
+		C0532C4923F705FE002D59A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0532C2523F705FA002D59A3 /* ioasys-challenge */;
+			targetProxy = C0532C4823F705FE002D59A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0532C2F23F705FA002D59A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0532C3023F705FA002D59A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0532C3423F705FD002D59A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0532C3523F705FD002D59A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0532C4E23F705FE002D59A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0532C4F23F705FE002D59A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0532C5123F705FE002D59A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2J564QJA4;
+				INFOPLIST_FILE = "ioasys-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gabrielrodrigues.ioasys-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0532C5223F705FE002D59A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2J564QJA4;
+				INFOPLIST_FILE = "ioasys-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gabrielrodrigues.ioasys-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0532C5423F705FE002D59A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2J564QJA4;
+				INFOPLIST_FILE = "ioasys-challengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gabrielrodrigues.ioasys-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ioasys-challenge.app/ioasys-challenge";
+			};
+			name = Debug;
+		};
+		C0532C5523F705FE002D59A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2J564QJA4;
+				INFOPLIST_FILE = "ioasys-challengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gabrielrodrigues.ioasys-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ioasys-challenge.app/ioasys-challenge";
+			};
+			name = Release;
+		};
+		C0532C5723F705FE002D59A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2J564QJA4;
+				INFOPLIST_FILE = "ioasys-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gabrielrodrigues.ioasys-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ioasys-challenge";
+			};
+			name = Debug;
+		};
+		C0532C5823F705FE002D59A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2J564QJA4;
+				INFOPLIST_FILE = "ioasys-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gabrielrodrigues.ioasys-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ioasys-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0532C2123F705FA002D59A3 /* Build configuration list for PBXProject "ioasys-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0532C4E23F705FE002D59A3 /* Debug */,
+				C0532C4F23F705FE002D59A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0532C5023F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0532C5123F705FE002D59A3 /* Debug */,
+				C0532C5223F705FE002D59A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0532C5323F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0532C5423F705FE002D59A3 /* Debug */,
+				C0532C5523F705FE002D59A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0532C5623F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0532C5723F705FE002D59A3 /* Debug */,
+				C0532C5823F705FE002D59A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0532C1E23F705FA002D59A3 /* Project object */;
+}
