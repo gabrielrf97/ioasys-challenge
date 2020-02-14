@@ -13,6 +13,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var hideButton: UIButton!
+    
+    var passwordHidden = false
     
     let loginViewModel = LoginViewModel()
     
@@ -23,6 +26,12 @@ class LoginViewController: UIViewController {
     }
     
     func setupView() {
+        emailTF.attributedPlaceholder = NSAttributedString(string: "insert your email",
+                                                           attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+      
+        passwordTF.attributedPlaceholder = NSAttributedString(string: "insert your password",
+                                                              attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        
         loginBtn.layer.cornerRadius = 12
         loginBtn.layer.masksToBounds = true
     }
@@ -34,6 +43,18 @@ class LoginViewController: UIViewController {
         }
         loginViewModel.tryLogin(with: email, password: password)
     }
+    
+    @IBAction func eyeTapped(_ sender: Any) {
+        passwordHidden = !passwordHidden
+        passwordTF.isSecureTextEntry = passwordHidden
+        if passwordHidden {
+            hideButton.setBackgroundImage(UIImage(named: "hidden"), for: .normal)
+        } else {
+            hideButton.setBackgroundImage(UIImage(named: "eye"), for: .normal)
+            
+        }
+    }
+    
 }
 
 extension LoginViewController: LoginViewDelegate {
@@ -51,7 +72,23 @@ extension LoginViewController: LoginViewDelegate {
         
     }
     
-    func fieldValidationFailed(erros: [String]) {
-          
+    func fieldValidationFailed(errors: [String]) {
+        guard let emailError = errors.first, let passwordError = errors.last else {
+            return // present error message
+        }
+        if !emailError.isEmpty {
+            emailTF.text = ""
+            emailTF.attributedPlaceholder = NSAttributedString(string: emailError,
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+        }
+        if !passwordError.isEmpty {
+            passwordTF.text = ""
+            passwordTF.attributedPlaceholder = NSAttributedString(string: passwordError,
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+        }
+    }
+    
+    func startedLogin() {
+        
     }
 }

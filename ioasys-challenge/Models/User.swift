@@ -24,6 +24,7 @@ class User {
             if results.count == 0
             {
                 sucess = false
+                errorMessage = "Be sure to inform a correct email address!"
             }
             
         } catch let error as NSError {

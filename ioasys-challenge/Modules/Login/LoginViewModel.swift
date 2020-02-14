@@ -10,8 +10,9 @@ import Foundation
 
 protocol LoginViewDelegate: class {
     func performedLoginSucessfuly()
+    func startedLogin()
     func loginAttemptFailed(with errorMessage: String)
-    func fieldValidationFailed(erros: [String])
+    func fieldValidationFailed(errors: [String])
 }
 
 class LoginViewModel {
@@ -22,8 +23,7 @@ class LoginViewModel {
         
     }
     
-    func tryLogin(with email: String, password: String) -> (Bool, [String]?) {
-        var result = true
+    func tryLogin(with email: String, password: String) {
         var errors = [String]()
         
         let emailValidation = User.validate(email: email)
@@ -31,29 +31,21 @@ class LoginViewModel {
         
         if emailValidation.result && passwordValidation.result {
             performLogin()
-            return (true, nil)
+            viewDelegate?.startedLogin()
         } else {
-            if !emailValidation.result {
-                guard let emailError = emailValidation.error else {
-                    return (false, nil)
-                }
+            if let emailError = emailValidation.error {
                 errors.append(emailError)
             } else {
                 errors.append("")
             }
             
-            if !passwordValidation.result {
-                guard let passwordError = passwordValidation.error else {
-                    return (false, nil)
-                }
+            if let passwordError = passwordValidation.error{
                 errors.append(passwordError)
             } else {
                 errors.append("")
             }
-            return (false, errors)
+            viewDelegate?.fieldValidationFailed(errors: errors)
         }
-        
-         
         
     }
     
