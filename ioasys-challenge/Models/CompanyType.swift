@@ -8,7 +8,12 @@
 
 import Foundation
 
-enum CompanyType: Int, Decodable {
+struct CompanyType: Decodable {
+    var typeName: String
+    var typeId: Int
+}
+
+enum CompanyTypeNumber: Int, Decodable {
     case agro = 1
     case aviation = 2
     case biotech = 3

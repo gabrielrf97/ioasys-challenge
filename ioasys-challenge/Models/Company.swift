@@ -12,23 +12,20 @@ import UIKit
 class Company: Decodable {
     let name: String
     let id: String
-    let description: String
-    let email: String
-    let city: String
-    let country: String
+    let description: String?
+    let city: String?
+    let country: String?
     let photoUrl: String?
-//    let picture: UIImage?
-//    let type: CompanyType
-//    let value: Double
-//    let sharePrice: Double
+    let type: CompanyType?
+
     
     enum CodingKeys: String, CodingKey {
         case name = "enterprise_name"
-        case email = "email_enterprise"
         case id = "id"
         case description = "description"
         case city = "city"
         case country = "country"
         case photoUrl = "photo"
+        case type = "enterprise_type"
     }
 }

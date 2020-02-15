@@ -13,6 +13,7 @@ class CompanyCell: UITableViewCell {
 //    @IBOutlet weak var cellImageView: UIImageView!
 //    @IBOutlet weak var titleLabel: UILabel!
 //    @IBOutlet weak var subtitleLabel: UILabel!
+    var id: Int = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()

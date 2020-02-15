@@ -17,6 +17,10 @@ class CompaniesViewController: UIViewController {
 //    var companiesViewModel:
     var cellIdentifier = "CompanyCell"
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -24,6 +28,7 @@ class CompaniesViewController: UIViewController {
     
     func setupView() {
         companiesTableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        var keyWindow = UIApplication.shared.windows.filter{$0.isKeyWindow}.first
     }
 
 }
@@ -39,6 +44,18 @@ extension CompaniesViewController: UITableViewDelegate, UITableViewDataSource {
         }
 //        cell.titleLbl.text = "Google LLC"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? CompanyCell,
+            let companyVC = UIStoryboard(name: "Company", bundle: nil).instantiateInitialViewController() as? CompanyViewController else {
+            return
+        }
+        companyVC.companyId = cell.id
+        companyVC.modalPresentationStyle = .fullScreen
+        self.present(companyVC, animated: true, completion: {
+            cell.setSelected(false, animated: false)
+        })
     }
     
     

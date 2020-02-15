@@ -17,27 +17,50 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s6i-C9-D40">
                                 <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Companies" id="qeC-B1-9uP"/>
                                 </items>
                             </navigationBar>
                             <searchBar contentMode="redraw" placeholder="type the company name" translatesAutoresizingMaskIntoConstraints="NO" id="lDF-gT-rbH">
                                 <rect key="frame" x="0.0" y="140" width="414" height="56"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <offsetWrapper key="searchTextPositionAdjustment" horizontal="4" vertical="0.0"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E1f-xs-h2I">
                                 <rect key="frame" x="0.0" y="196" width="414" height="700"/>
-                                <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="Eov-Ge-2Op" id="y3Q-Qb-Y2O"/>
                                     <outlet property="delegate" destination="Eov-Ge-2Op" id="Lsx-PD-h0W"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-Um-Lky">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.1529197991" green="0.15295344590000001" blue="0.15291768310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="L0m-Um-Lky" firstAttribute="leading" secondItem="ZAl-YS-OgJ" secondAttribute="leading" id="5XG-aO-caK"/>
+                            <constraint firstAttribute="trailing" secondItem="L0m-Um-Lky" secondAttribute="trailing" id="8HT-nU-Bgh"/>
                             <constraint firstItem="lDF-gT-rbH" firstAttribute="trailing" secondItem="1gm-Lu-6QX" secondAttribute="trailing" id="EHM-1y-1a3"/>
                             <constraint firstItem="s6i-C9-D40" firstAttribute="top" secondItem="1gm-Lu-6QX" secondAttribute="top" id="I1r-Zh-Wjw"/>
                             <constraint firstItem="s6i-C9-D40" firstAttribute="leading" secondItem="1gm-Lu-6QX" secondAttribute="leading" id="JH0-j0-5Wy"/>
@@ -45,10 +68,12 @@
                             <constraint firstItem="s6i-C9-D40" firstAttribute="trailing" secondItem="1gm-Lu-6QX" secondAttribute="trailing" id="Lvd-E2-pEZ"/>
                             <constraint firstItem="lDF-gT-rbH" firstAttribute="height" secondItem="1gm-Lu-6QX" secondAttribute="height" multiplier="56/818" id="R2T-11-5G5"/>
                             <constraint firstItem="1gm-Lu-6QX" firstAttribute="bottom" secondItem="E1f-xs-h2I" secondAttribute="bottom" constant="-34" id="ZP8-ct-VdX"/>
+                            <constraint firstItem="L0m-Um-Lky" firstAttribute="height" secondItem="1gm-Lu-6QX" secondAttribute="height" multiplier="44/818" id="e49-gu-XF2"/>
                             <constraint firstItem="lDF-gT-rbH" firstAttribute="top" secondItem="s6i-C9-D40" secondAttribute="bottom" id="fGI-y9-0v3"/>
                             <constraint firstItem="lDF-gT-rbH" firstAttribute="leading" secondItem="1gm-Lu-6QX" secondAttribute="leading" id="i7H-Gh-6Sk"/>
                             <constraint firstItem="E1f-xs-h2I" firstAttribute="leading" secondItem="1gm-Lu-6QX" secondAttribute="leading" id="ss5-En-X85"/>
                             <constraint firstItem="1gm-Lu-6QX" firstAttribute="trailing" secondItem="E1f-xs-h2I" secondAttribute="trailing" id="vtI-Cc-tD1"/>
+                            <constraint firstItem="L0m-Um-Lky" firstAttribute="top" secondItem="ZAl-YS-OgJ" secondAttribute="top" id="wu5-iD-SlP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1gm-Lu-6QX"/>
                     </view>

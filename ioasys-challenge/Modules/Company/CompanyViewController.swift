@@ -10,10 +10,25 @@ import UIKit
 
 class CompanyViewController: UIViewController {
 
+    @IBOutlet weak var companyImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UITextView!
+    
+    let companyViewModel = CompanyViewModel()
+    var companyId = 0
+    
+    override func loadView() {
+        super.loadView()
+        descriptionLabel.sizeToFit()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
+    @IBAction func backTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
