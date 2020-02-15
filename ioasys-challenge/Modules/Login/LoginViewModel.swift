@@ -30,7 +30,7 @@ class LoginViewModel {
         let passwordValidation = User.validate(password: password)
         
         if emailValidation.result && passwordValidation.result {
-            performLogin()
+            performLogin(with: email, password)
             viewDelegate?.startedLogin()
         } else {
             if let emailError = emailValidation.error {
@@ -49,9 +49,21 @@ class LoginViewModel {
         
     }
     
-    func performLogin() {
-//        make network request
-//        sendInfoToAppAuth
+    func performLogin(with email: String, _ password: String) {
+        
+        let params : [String:Any] = ["email":email,
+                      "password":password]
+        
+        Network.shared.request(Router.login, parameters: params, model: User.self, completion: { response in
+            switch response {
+            case .success:
+                break
+            case .failure:
+                break
+            }
+            
+        })
+        
         viewDelegate?.performedLoginSucessfuly()
     }
 

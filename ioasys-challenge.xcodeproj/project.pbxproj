@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04580F8C379A9C5E796CE1F2 /* Pods_ioasys_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65FDA937353031F877CF1EC /* Pods_ioasys_challenge.framework */; };
+		9072BA3DE0348DD7477C8658 /* Pods_ioasys_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77201F4F28D07C919B2B23F2 /* Pods_ioasys_challengeTests.framework */; };
 		C00C18BE23F750C300C13B6B /* CompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C18BD23F750C300C13B6B /* CompaniesViewController.swift */; };
 		C00C18C023F750CE00C13B6B /* Companies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00C18BF23F750CE00C13B6B /* Companies.storyboard */; };
 		C00C18C223F750D900C13B6B /* CompaniesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C18C123F750D900C13B6B /* CompaniesViewModel.swift */; };
@@ -28,6 +30,13 @@
 		C0532C6823F725CE002D59A3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6723F725CE002D59A3 /* LoginViewModel.swift */; };
 		C0532C6B23F7359C002D59A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6A23F7359C002D59A3 /* User.swift */; };
 		C0FE08B423F8690800D9024D /* AppAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08B323F8690800D9024D /* AppAuth.swift */; };
+		C0FE08CA23F8999500D9024D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08C723F8999400D9024D /* API.swift */; };
+		C0FE08CB23F8999500D9024D /* APICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08C823F8999400D9024D /* APICacheManager.swift */; };
+		C0FE08CC23F8999500D9024D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08C923F8999500D9024D /* APIRequest.swift */; };
+		C0FE08CF23F89B0500D9024D /* ChallengeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08CE23F89B0500D9024D /* ChallengeAPI.swift */; };
+		C0FE08D223F89D2F00D9024D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D023F89D2F00D9024D /* Network.swift */; };
+		C0FE08D323F89D2F00D9024D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D123F89D2F00D9024D /* Router.swift */; };
+		DEB7ED9F19B8DB3DDEDC2044 /* Pods_ioasys_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D966FB77E374B1905601AB /* Pods_ioasys_challengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15D966FB77E374B1905601AB /* Pods_ioasys_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioasys_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF81EBD6ACA1881175230DA /* Pods-ioasys-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeUITests/Pods-ioasys-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		383C1052CE99D9F25925614E /* Pods-ioasys-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeUITests/Pods-ioasys-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A65CA9FF6022104D6EE11F7 /* Pods-ioasys-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challenge.release.xcconfig"; path = "Target Support Files/Pods-ioasys-challenge/Pods-ioasys-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		77201F4F28D07C919B2B23F2 /* Pods_ioasys_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioasys_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB29183209FEFD7F37D2413D /* Pods-ioasys-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challenge.debug.xcconfig"; path = "Target Support Files/Pods-ioasys-challenge/Pods-ioasys-challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		C00C18BD23F750C300C13B6B /* CompaniesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesViewController.swift; sourceTree = "<group>"; };
 		C00C18BF23F750CE00C13B6B /* Companies.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Companies.storyboard; sourceTree = "<group>"; };
 		C00C18C123F750D900C13B6B /* CompaniesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesViewModel.swift; sourceTree = "<group>"; };
@@ -75,6 +90,15 @@
 		C0532C6723F725CE002D59A3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C0532C6A23F7359C002D59A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C0FE08B323F8690800D9024D /* AppAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAuth.swift; sourceTree = "<group>"; };
+		C0FE08C723F8999400D9024D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C0FE08C823F8999400D9024D /* APICacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICacheManager.swift; sourceTree = "<group>"; };
+		C0FE08C923F8999500D9024D /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		C0FE08CE23F89B0500D9024D /* ChallengeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeAPI.swift; sourceTree = "<group>"; };
+		C0FE08D023F89D2F00D9024D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C0FE08D123F89D2F00D9024D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D897469708DC0988330FEE3A /* Pods-ioasys-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8C6E78E2FC5ADFBE3C6265A /* Pods-ioasys-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		E65FDA937353031F877CF1EC /* Pods_ioasys_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioasys_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04580F8C379A9C5E796CE1F2 /* Pods_ioasys_challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9072BA3DE0348DD7477C8658 /* Pods_ioasys_challengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +122,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB7ED9F19B8DB3DDEDC2044 /* Pods_ioasys_challengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94D4DF73081D4BACE66F6BEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E65FDA937353031F877CF1EC /* Pods_ioasys_challenge.framework */,
+				77201F4F28D07C919B2B23F2 /* Pods_ioasys_challengeTests.framework */,
+				15D966FB77E374B1905601AB /* Pods_ioasys_challengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C00C18BC23F750A900C13B6B /* Companies */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +185,8 @@
 				C0532C3F23F705FD002D59A3 /* ioasys-challengeTests */,
 				C0532C4A23F705FE002D59A3 /* ioasys-challengeUITests */,
 				C0532C2723F705FA002D59A3 /* Products */,
+				F9FF5C7916CA6C1A3E886F4D /* Pods */,
+				94D4DF73081D4BACE66F6BEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,8 +274,43 @@
 		C0FE08B523F8797B00D9024D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C0FE08D523F89D3C00D9024D /* ioasys */,
+				C0FE08D423F89D3200D9024D /* Gabriel */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C0FE08D423F89D3200D9024D /* Gabriel */ = {
+			isa = PBXGroup;
+			children = (
+				C0FE08D023F89D2F00D9024D /* Network.swift */,
+				C0FE08D123F89D2F00D9024D /* Router.swift */,
+			);
+			path = Gabriel;
+			sourceTree = "<group>";
+		};
+		C0FE08D523F89D3C00D9024D /* ioasys */ = {
+			isa = PBXGroup;
+			children = (
+				C0FE08C723F8999400D9024D /* API.swift */,
+				C0FE08C823F8999400D9024D /* APICacheManager.swift */,
+				C0FE08C923F8999500D9024D /* APIRequest.swift */,
+				C0FE08CE23F89B0500D9024D /* ChallengeAPI.swift */,
+			);
+			path = ioasys;
+			sourceTree = "<group>";
+		};
+		F9FF5C7916CA6C1A3E886F4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB29183209FEFD7F37D2413D /* Pods-ioasys-challenge.debug.xcconfig */,
+				5A65CA9FF6022104D6EE11F7 /* Pods-ioasys-challenge.release.xcconfig */,
+				D897469708DC0988330FEE3A /* Pods-ioasys-challengeTests.debug.xcconfig */,
+				D8C6E78E2FC5ADFBE3C6265A /* Pods-ioasys-challengeTests.release.xcconfig */,
+				2CF81EBD6ACA1881175230DA /* Pods-ioasys-challengeUITests.debug.xcconfig */,
+				383C1052CE99D9F25925614E /* Pods-ioasys-challengeUITests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +320,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0532C5023F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challenge" */;
 			buildPhases = (
+				66C812312E17C6B2B3EC98B9 /* [CP] Check Pods Manifest.lock */,
 				C0532C2223F705FA002D59A3 /* Sources */,
 				C0532C2323F705FA002D59A3 /* Frameworks */,
 				C0532C2423F705FA002D59A3 /* Resources */,
+				0E199335D15428DB83A55A19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0532C5323F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challengeTests" */;
 			buildPhases = (
+				A3C8832E60B9CE88C063D30D /* [CP] Check Pods Manifest.lock */,
 				C0532C3823F705FD002D59A3 /* Sources */,
 				C0532C3923F705FD002D59A3 /* Frameworks */,
 				C0532C3A23F705FD002D59A3 /* Resources */,
@@ -281,6 +358,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0532C5623F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challengeUITests" */;
 			buildPhases = (
+				3A15A4CB14BE3FA027680264 /* [CP] Check Pods Manifest.lock */,
 				C0532C4323F705FE002D59A3 /* Sources */,
 				C0532C4423F705FE002D59A3 /* Frameworks */,
 				C0532C4523F705FE002D59A3 /* Resources */,
@@ -367,6 +445,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E199335D15428DB83A55A19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioasys-challenge/Pods-ioasys-challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioasys-challenge/Pods-ioasys-challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ioasys-challenge/Pods-ioasys-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A15A4CB14BE3FA027680264 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ioasys-challengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66C812312E17C6B2B3EC98B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ioasys-challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3C8832E60B9CE88C063D30D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ioasys-challengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0532C2223F705FA002D59A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -376,14 +540,20 @@
 				C0532C5D23F706AF002D59A3 /* BusinessMan.swift in Sources */,
 				C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */,
 				C0FE08B423F8690800D9024D /* AppAuth.swift in Sources */,
+				C0FE08CA23F8999500D9024D /* API.swift in Sources */,
 				C00C18BE23F750C300C13B6B /* CompaniesViewController.swift in Sources */,
 				C00C18CB23F7A69900C13B6B /* CompanyCell.swift in Sources */,
 				C00C18D223F7ABCD00C13B6B /* CompanyViewModel.swift in Sources */,
 				C0532C6823F725CE002D59A3 /* LoginViewModel.swift in Sources */,
+				C0FE08CB23F8999500D9024D /* APICacheManager.swift in Sources */,
+				C0FE08CF23F89B0500D9024D /* ChallengeAPI.swift in Sources */,
 				C0532C6B23F7359C002D59A3 /* User.swift in Sources */,
+				C0FE08D323F89D2F00D9024D /* Router.swift in Sources */,
+				C0FE08D223F89D2F00D9024D /* Network.swift in Sources */,
 				C00C18C223F750D900C13B6B /* CompaniesViewModel.swift in Sources */,
 				C0532C6123F70811002D59A3 /* CompanyType.swift in Sources */,
 				C00C18CE23F7ABB300C13B6B /* CompanyViewController.swift in Sources */,
+				C0FE08CC23F8999500D9024D /* APIRequest.swift in Sources */,
 				C0532C5F23F706B8002D59A3 /* Company.swift in Sources */,
 				C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */,
 			);
@@ -537,6 +707,7 @@
 		};
 		C0532C5123F705FE002D59A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB29183209FEFD7F37D2413D /* Pods-ioasys-challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +726,7 @@
 		};
 		C0532C5223F705FE002D59A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A65CA9FF6022104D6EE11F7 /* Pods-ioasys-challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -573,6 +745,7 @@
 		};
 		C0532C5423F705FE002D59A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D897469708DC0988330FEE3A /* Pods-ioasys-challengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -595,6 +768,7 @@
 		};
 		C0532C5523F705FE002D59A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C6E78E2FC5ADFBE3C6265A /* Pods-ioasys-challengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -617,6 +791,7 @@
 		};
 		C0532C5723F705FE002D59A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CF81EBD6ACA1881175230DA /* Pods-ioasys-challengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -637,6 +812,7 @@
 		};
 		C0532C5823F705FE002D59A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 383C1052CE99D9F25925614E /* Pods-ioasys-challengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
