@@ -51,6 +51,7 @@ class LoginViewModel {
     
     func performLogin() {
 //        make network request
+//        sendInfoToAppAuth
         viewDelegate?.performedLoginSucessfuly()
     }
 

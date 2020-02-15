@@ -27,6 +27,7 @@
 		C0532C6623F725B9002D59A3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0532C6523F725B9002D59A3 /* Login.storyboard */; };
 		C0532C6823F725CE002D59A3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6723F725CE002D59A3 /* LoginViewModel.swift */; };
 		C0532C6B23F7359C002D59A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6A23F7359C002D59A3 /* User.swift */; };
+		C0FE08B423F8690800D9024D /* AppAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08B323F8690800D9024D /* AppAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		C0532C6523F725B9002D59A3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		C0532C6723F725CE002D59A3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C0532C6A23F7359C002D59A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C0FE08B323F8690800D9024D /* AppAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				C0532C2923F705FA002D59A3 /* AppDelegate.swift */,
 				C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */,
+				C0FE08B323F8690800D9024D /* AppAuth.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 		C0532C5B23F70699002D59A3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C0FE08B523F8797B00D9024D /* Network */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -226,6 +230,13 @@
 				C0532C6723F725CE002D59A3 /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		C0FE08B523F8797B00D9024D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +375,7 @@
 				C0532C6323F7259F002D59A3 /* LoginViewController.swift in Sources */,
 				C0532C5D23F706AF002D59A3 /* BusinessMan.swift in Sources */,
 				C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */,
+				C0FE08B423F8690800D9024D /* AppAuth.swift in Sources */,
 				C00C18BE23F750C300C13B6B /* CompaniesViewController.swift in Sources */,
 				C00C18CB23F7A69900C13B6B /* CompanyCell.swift in Sources */,
 				C00C18D223F7ABCD00C13B6B /* CompanyViewModel.swift in Sources */,

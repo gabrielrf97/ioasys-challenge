@@ -10,6 +10,18 @@ import Foundation
 
 class User {
     
+    let id: Int
+    let email: String
+    let password: String
+    let name: String
+    
+    init(id: Int, email: String, password: String, name: String) {
+        self.id = id
+        self.email = email
+        self.password = password
+        self.name = password
+    }
+    
     static func validate(email: String) -> (result: Bool, error: String?) {
         
         var sucess = true
