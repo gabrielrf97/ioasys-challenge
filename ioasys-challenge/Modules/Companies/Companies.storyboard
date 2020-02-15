@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eov-Ge-2Op">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Enterprises-->
+        <scene sceneID="kBa-7D-5UQ">
+            <objects>
+                <viewController id="Eov-Ge-2Op" customClass="CompaniesViewController" customModule="ioasys_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZAl-YS-OgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s6i-C9-D40">
+                                <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Companies" id="qeC-B1-9uP"/>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" placeholder="type the company name" translatesAutoresizingMaskIntoConstraints="NO" id="lDF-gT-rbH">
+                                <rect key="frame" x="0.0" y="140" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E1f-xs-h2I">
+                                <rect key="frame" x="0.0" y="196" width="414" height="700"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Eov-Ge-2Op" id="y3Q-Qb-Y2O"/>
+                                    <outlet property="delegate" destination="Eov-Ge-2Op" id="Lsx-PD-h0W"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lDF-gT-rbH" firstAttribute="trailing" secondItem="1gm-Lu-6QX" secondAttribute="trailing" id="EHM-1y-1a3"/>
+                            <constraint firstItem="s6i-C9-D40" firstAttribute="top" secondItem="1gm-Lu-6QX" secondAttribute="top" id="I1r-Zh-Wjw"/>
+                            <constraint firstItem="s6i-C9-D40" firstAttribute="leading" secondItem="1gm-Lu-6QX" secondAttribute="leading" id="JH0-j0-5Wy"/>
+                            <constraint firstItem="E1f-xs-h2I" firstAttribute="top" secondItem="lDF-gT-rbH" secondAttribute="bottom" id="JUh-8Z-gqQ"/>
+                            <constraint firstItem="s6i-C9-D40" firstAttribute="trailing" secondItem="1gm-Lu-6QX" secondAttribute="trailing" id="Lvd-E2-pEZ"/>
+                            <constraint firstItem="lDF-gT-rbH" firstAttribute="height" secondItem="1gm-Lu-6QX" secondAttribute="height" multiplier="56/818" id="R2T-11-5G5"/>
+                            <constraint firstItem="1gm-Lu-6QX" firstAttribute="bottom" secondItem="E1f-xs-h2I" secondAttribute="bottom" constant="-34" id="ZP8-ct-VdX"/>
+                            <constraint firstItem="lDF-gT-rbH" firstAttribute="top" secondItem="s6i-C9-D40" secondAttribute="bottom" id="fGI-y9-0v3"/>
+                            <constraint firstItem="lDF-gT-rbH" firstAttribute="leading" secondItem="1gm-Lu-6QX" secondAttribute="leading" id="i7H-Gh-6Sk"/>
+                            <constraint firstItem="E1f-xs-h2I" firstAttribute="leading" secondItem="1gm-Lu-6QX" secondAttribute="leading" id="ss5-En-X85"/>
+                            <constraint firstItem="1gm-Lu-6QX" firstAttribute="trailing" secondItem="E1f-xs-h2I" secondAttribute="trailing" id="vtI-Cc-tD1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1gm-Lu-6QX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Enterprises" prompt="Enterprises" id="Sv8-JL-qdT"/>
+                    <connections>
+                        <outlet property="companiesTableView" destination="E1f-xs-h2I" id="8Cu-6c-QtG"/>
+                        <outlet property="navigationBar" destination="s6i-C9-D40" id="Kl8-YK-Jo9"/>
+                        <outlet property="searchBar" destination="lDF-gT-rbH" id="8Nu-2P-zZU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vv5-bb-qJn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+</document>

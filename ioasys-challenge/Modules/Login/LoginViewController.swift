@@ -19,10 +19,18 @@ class LoginViewController: UIViewController {
     
     let loginViewModel = LoginViewModel()
     
+    var shouldLoginAutomatic = true // to speed up things
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         loginViewModel.viewDelegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if shouldLoginAutomatic {
+             loginViewModel.tryLogin(with: "gabriel@gmail.com", password: "12345")
+        }
     }
     
     func setupView() {
@@ -60,12 +68,13 @@ class LoginViewController: UIViewController {
 extension LoginViewController: LoginViewDelegate {
   
     func performedLoginSucessfuly() {
-        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-        guard let dashboardVC = storyboard.instantiateInitialViewController() else {
-//            Present error message
+        let storyboard = UIStoryboard(name: "Companies", bundle: nil)
+        guard let companiesVC = storyboard.instantiateInitialViewController() else {
+//            present error message
             return
         }
-        self.present(dashboardVC, animated: true, completion: nil)
+        companiesVC.modalPresentationStyle = .fullScreen
+        self.present(companiesVC, animated: true, completion: nil)
     }
     
     func loginAttemptFailed(with errorMessage: String) {

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyCell" customModule="ioasys_challenge" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompanyCell" rowHeight="80" id="eYt-eZ-FIN" customClass="CompanyCell" customModule="ioasys_challenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eYt-eZ-FIN" id="egV-ms-tyc">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilepic" translatesAutoresizingMaskIntoConstraints="NO" id="lR1-gZ-KGa">
+                        <rect key="frame" x="20" y="10" width="60.000000000000227" height="60.000000000000227"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="lR1-gZ-KGa" secondAttribute="height" multiplier="1:1" id="IsD-UE-xnu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-MU-CZW">
+                        <rect key="frame" x="90" y="15" width="304" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="2Qv-1q-p14"/>
+                            <constraint firstAttribute="height" constant="24" id="P84-bL-HXi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKg-f4-vKI">
+                        <rect key="frame" x="90" y="47" width="304" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="G5m-LK-Bbq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ZKg-f4-vKI" firstAttribute="leading" secondItem="b5t-MU-CZW" secondAttribute="leading" id="H8U-QS-SSF"/>
+                    <constraint firstAttribute="bottom" secondItem="lR1-gZ-KGa" secondAttribute="bottom" constant="10" id="L4q-yj-0x5"/>
+                    <constraint firstAttribute="trailing" secondItem="b5t-MU-CZW" secondAttribute="trailing" constant="20" id="L6S-rT-mBw"/>
+                    <constraint firstItem="ZKg-f4-vKI" firstAttribute="top" secondItem="b5t-MU-CZW" secondAttribute="bottom" constant="8" id="LVN-3M-la2"/>
+                    <constraint firstItem="b5t-MU-CZW" firstAttribute="top" secondItem="egV-ms-tyc" secondAttribute="top" constant="15" id="PUP-6c-cHv"/>
+                    <constraint firstItem="b5t-MU-CZW" firstAttribute="leading" secondItem="lR1-gZ-KGa" secondAttribute="trailing" constant="10" id="cnx-7S-lkt"/>
+                    <constraint firstItem="lR1-gZ-KGa" firstAttribute="leading" secondItem="egV-ms-tyc" secondAttribute="leading" constant="20" id="cvy-jy-fcx"/>
+                    <constraint firstItem="lR1-gZ-KGa" firstAttribute="top" secondItem="egV-ms-tyc" secondAttribute="top" constant="10" id="wF4-hQ-DYP"/>
+                    <constraint firstItem="ZKg-f4-vKI" firstAttribute="trailing" secondItem="b5t-MU-CZW" secondAttribute="trailing" id="xvy-TR-dQt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="134" y="27"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profilepic" width="949.5" height="949"/>
+    </resources>
+</document>

@@ -50,7 +50,8 @@ class LoginViewModel {
     }
     
     func performLogin() {
-        
+//        make network request
+        viewDelegate?.performedLoginSucessfuly()
     }
 
 }

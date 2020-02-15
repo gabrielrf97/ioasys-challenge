@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00C18BE23F750C300C13B6B /* CompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C18BD23F750C300C13B6B /* CompaniesViewController.swift */; };
+		C00C18C023F750CE00C13B6B /* Companies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00C18BF23F750CE00C13B6B /* Companies.storyboard */; };
+		C00C18C223F750D900C13B6B /* CompaniesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C18C123F750D900C13B6B /* CompaniesViewModel.swift */; };
+		C00C18C923F7A68800C13B6B /* CompanyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C00C18C823F7A68800C13B6B /* CompanyCell.xib */; };
+		C00C18CB23F7A69900C13B6B /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C18CA23F7A69900C13B6B /* CompanyCell.swift */; };
+		C00C18CE23F7ABB300C13B6B /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C18CD23F7ABB300C13B6B /* CompanyViewController.swift */; };
+		C00C18D023F7ABBD00C13B6B /* Company.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00C18CF23F7ABBD00C13B6B /* Company.storyboard */; };
+		C00C18D223F7ABCD00C13B6B /* CompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C18D123F7ABCD00C13B6B /* CompanyViewModel.swift */; };
 		C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2923F705FA002D59A3 /* AppDelegate.swift */; };
 		C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */; };
 		C0532C2E23F705FA002D59A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2D23F705FA002D59A3 /* ViewController.swift */; };
@@ -42,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C00C18BD23F750C300C13B6B /* CompaniesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesViewController.swift; sourceTree = "<group>"; };
+		C00C18BF23F750CE00C13B6B /* Companies.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Companies.storyboard; sourceTree = "<group>"; };
+		C00C18C123F750D900C13B6B /* CompaniesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesViewModel.swift; sourceTree = "<group>"; };
+		C00C18C823F7A68800C13B6B /* CompanyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyCell.xib; sourceTree = "<group>"; };
+		C00C18CA23F7A69900C13B6B /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
+		C00C18CD23F7ABB300C13B6B /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		C00C18CF23F7ABBD00C13B6B /* Company.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Company.storyboard; sourceTree = "<group>"; };
+		C00C18D123F7ABCD00C13B6B /* CompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewModel.swift; sourceTree = "<group>"; };
 		C0532C2623F705FA002D59A3 /* ioasys-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioasys-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0532C2923F705FA002D59A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +106,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C00C18BC23F750A900C13B6B /* Companies */ = {
+			isa = PBXGroup;
+			children = (
+				C00C18BD23F750C300C13B6B /* CompaniesViewController.swift */,
+				C00C18BF23F750CE00C13B6B /* Companies.storyboard */,
+				C00C18C123F750D900C13B6B /* CompaniesViewModel.swift */,
+			);
+			path = Companies;
+			sourceTree = "<group>";
+		};
+		C00C18C323F75F7300C13B6B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C00C18C823F7A68800C13B6B /* CompanyCell.xib */,
+				C00C18CA23F7A69900C13B6B /* CompanyCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C00C18CC23F7AB9B00C13B6B /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				C00C18CD23F7ABB300C13B6B /* CompanyViewController.swift */,
+				C00C18CF23F7ABBD00C13B6B /* Company.storyboard */,
+				C00C18D123F7ABCD00C13B6B /* CompanyViewModel.swift */,
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
 		C0532C1D23F705FA002D59A3 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +158,7 @@
 		C0532C2823F705FA002D59A3 /* ioasys-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				C00C18C323F75F7300C13B6B /* Components */,
 				C0532C5B23F70699002D59A3 /* Helpers */,
 				C0532C5A23F70690002D59A3 /* Modules */,
 				C0532C5923F7068B002D59A3 /* Models */,
@@ -159,6 +205,8 @@
 		C0532C5A23F70690002D59A3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C00C18CC23F7AB9B00C13B6B /* Company */,
+				C00C18BC23F750A900C13B6B /* Companies */,
 				C0532C6423F725A6002D59A3 /* Login */,
 			);
 			path = Modules;
@@ -285,9 +333,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00C18D023F7ABBD00C13B6B /* Company.storyboard in Resources */,
+				C00C18C023F750CE00C13B6B /* Companies.storyboard in Resources */,
 				C0532C6623F725B9002D59A3 /* Login.storyboard in Resources */,
 				C0532C3623F705FD002D59A3 /* LaunchScreen.storyboard in Resources */,
 				C0532C3323F705FD002D59A3 /* Assets.xcassets in Resources */,
+				C00C18C923F7A68800C13B6B /* CompanyCell.xib in Resources */,
 				C0532C3123F705FA002D59A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,9 +368,14 @@
 				C0532C5D23F706AF002D59A3 /* BusinessMan.swift in Sources */,
 				C0532C2E23F705FA002D59A3 /* ViewController.swift in Sources */,
 				C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */,
+				C00C18BE23F750C300C13B6B /* CompaniesViewController.swift in Sources */,
+				C00C18CB23F7A69900C13B6B /* CompanyCell.swift in Sources */,
+				C00C18D223F7ABCD00C13B6B /* CompanyViewModel.swift in Sources */,
 				C0532C6823F725CE002D59A3 /* LoginViewModel.swift in Sources */,
 				C0532C6B23F7359C002D59A3 /* User.swift in Sources */,
+				C00C18C223F750D900C13B6B /* CompaniesViewModel.swift in Sources */,
 				C0532C6123F70811002D59A3 /* CompanyType.swift in Sources */,
+				C00C18CE23F7ABB300C13B6B /* CompanyViewController.swift in Sources */,
 				C0532C5F23F706B8002D59A3 /* Company.swift in Sources */,
 				C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */,
 			);
