@@ -56,12 +56,14 @@ class LoginViewModel {
         
         Network.shared.request(Router.login, parameters: params, model: User.self, completion: { response in
             switch response {
-            case .success:
-                break
-            case .failure:
-                break
+            case .success(let response):
+                if let user = response.model {
+                    AppAuth.shared.signin(user: user, client: response.client, token: response.token)
+                }
+                self.viewDelegate?.performedLoginSucessfuly()
+            case .failure(let error):
+                self.viewDelegate?.loginAttemptFailed(with: error)
             }
-            
         })
         
         viewDelegate?.performedLoginSucessfuly()

@@ -13,7 +13,7 @@ import Alamofire
 typealias Parameters = [String : Any]
 
 enum NetworkResult<Model> {
-    case sucess (model: Model?)
+    case success (model: Model?, client: String, token: String)
     case failure (error: String)
 }
 
@@ -34,6 +34,8 @@ class Network {
             do {
                 
                 var object: Model?
+                var client: String!
+                var token: String!
                 
                 if let error = response.error as NSError? {
                     
@@ -51,9 +53,13 @@ class Network {
                 
                 if response.data?.count != 0 {
                     object = try JSONDecoder().decode(model, from: response.data!)
+                    if let headers = response.response?.allHeaderFields {
+                        client = headers["client"] as? String
+                        token = headers["access-token"] as? String
+                    }
                 }
                 
-                completion(.sucess(model: object))
+                completion(.success(model: object, client: client, token: token))
                 
             } catch {
                 completion(.failure(error: "Sorry, something went wrong"))

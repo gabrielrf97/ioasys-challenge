@@ -70,7 +70,7 @@ extension LoginViewController: LoginViewDelegate {
     func performedLoginSucessfuly() {
         let storyboard = UIStoryboard(name: "Companies", bundle: nil)
         guard let companiesVC = storyboard.instantiateInitialViewController() else {
-//            present error message
+            self.presentMessage(with: "Opa",body: "Ocorreu um erro e não conseguiremos fazer login", option: "Tente novamente")
             return
         }
         companiesVC.modalPresentationStyle = .fullScreen
@@ -78,12 +78,12 @@ extension LoginViewController: LoginViewDelegate {
     }
     
     func loginAttemptFailed(with errorMessage: String) {
-        
+        self.presentMessage(with: "Opa", body: errorMessage, option: "Cancelar")
     }
     
     func fieldValidationFailed(errors: [String]) {
         guard let emailError = errors.first, let passwordError = errors.last else {
-            return // present error message
+            return
         }
         if !emailError.isEmpty {
             emailTF.text = ""

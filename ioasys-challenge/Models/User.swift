@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User {
+class User: Decodable {
     
     let id: Int
     let email: String

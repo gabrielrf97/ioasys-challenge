@@ -36,6 +36,7 @@
 		C0FE08CF23F89B0500D9024D /* ChallengeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08CE23F89B0500D9024D /* ChallengeAPI.swift */; };
 		C0FE08D223F89D2F00D9024D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D023F89D2F00D9024D /* Network.swift */; };
 		C0FE08D323F89D2F00D9024D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D123F89D2F00D9024D /* Router.swift */; };
+		C0FE08D823F9B26C00D9024D /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */; };
 		DEB7ED9F19B8DB3DDEDC2044 /* Pods_ioasys_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D966FB77E374B1905601AB /* Pods_ioasys_challengeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		C0FE08CE23F89B0500D9024D /* ChallengeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeAPI.swift; sourceTree = "<group>"; };
 		C0FE08D023F89D2F00D9024D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C0FE08D123F89D2F00D9024D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
 		D897469708DC0988330FEE3A /* Pods-ioasys-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8C6E78E2FC5ADFBE3C6265A /* Pods-ioasys-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E65FDA937353031F877CF1EC /* Pods_ioasys_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioasys_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +258,7 @@
 		C0532C5B23F70699002D59A3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C0FE08D623F9B25800D9024D /* Extensions */,
 				C0FE08B523F8797B00D9024D /* Network */,
 			);
 			path = Helpers;
@@ -298,6 +301,14 @@
 				C0FE08CE23F89B0500D9024D /* ChallengeAPI.swift */,
 			);
 			path = ioasys;
+			sourceTree = "<group>";
+		};
+		C0FE08D623F9B25800D9024D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F9FF5C7916CA6C1A3E886F4D /* Pods */ = {
@@ -540,6 +551,7 @@
 				C0532C5D23F706AF002D59A3 /* BusinessMan.swift in Sources */,
 				C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */,
 				C0FE08B423F8690800D9024D /* AppAuth.swift in Sources */,
+				C0FE08D823F9B26C00D9024D /* ViewControllerExt.swift in Sources */,
 				C0FE08CA23F8999500D9024D /* API.swift in Sources */,
 				C00C18BE23F750C300C13B6B /* CompaniesViewController.swift in Sources */,
 				C00C18CB23F7A69900C13B6B /* CompanyCell.swift in Sources */,
