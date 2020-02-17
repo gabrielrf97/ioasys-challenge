@@ -16,7 +16,6 @@
 		C00C18CB23F7A69900C13B6B /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C18CA23F7A69900C13B6B /* CompanyCell.swift */; };
 		C00C18CE23F7ABB300C13B6B /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C18CD23F7ABB300C13B6B /* CompanyViewController.swift */; };
 		C00C18D023F7ABBD00C13B6B /* Company.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00C18CF23F7ABBD00C13B6B /* Company.storyboard */; };
-		C00C18D223F7ABCD00C13B6B /* CompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C18D123F7ABCD00C13B6B /* CompanyViewModel.swift */; };
 		C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2923F705FA002D59A3 /* AppDelegate.swift */; };
 		C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */; };
 		C0532C3323F705FD002D59A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0532C3223F705FD002D59A3 /* Assets.xcassets */; };
@@ -37,6 +36,7 @@
 		C0FE08D223F89D2F00D9024D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D023F89D2F00D9024D /* Network.swift */; };
 		C0FE08D323F89D2F00D9024D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D123F89D2F00D9024D /* Router.swift */; };
 		C0FE08D823F9B26C00D9024D /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */; };
+		C0FE08DA23FAEDB200D9024D /* Enterprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D923FAEDB200D9024D /* Enterprise.swift */; };
 		DEB7ED9F19B8DB3DDEDC2044 /* Pods_ioasys_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D966FB77E374B1905601AB /* Pods_ioasys_challengeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +71,6 @@
 		C00C18CA23F7A69900C13B6B /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
 		C00C18CD23F7ABB300C13B6B /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		C00C18CF23F7ABBD00C13B6B /* Company.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Company.storyboard; sourceTree = "<group>"; };
-		C00C18D123F7ABCD00C13B6B /* CompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewModel.swift; sourceTree = "<group>"; };
 		C0532C2623F705FA002D59A3 /* ioasys-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioasys-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0532C2923F705FA002D59A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 		C0FE08D023F89D2F00D9024D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C0FE08D123F89D2F00D9024D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
+		C0FE08D923FAEDB200D9024D /* Enterprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enterprise.swift; sourceTree = "<group>"; };
 		D897469708DC0988330FEE3A /* Pods-ioasys-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8C6E78E2FC5ADFBE3C6265A /* Pods-ioasys-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E65FDA937353031F877CF1EC /* Pods_ioasys_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioasys_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,7 +165,6 @@
 			children = (
 				C00C18CD23F7ABB300C13B6B /* CompanyViewController.swift */,
 				C00C18CF23F7ABBD00C13B6B /* Company.storyboard */,
-				C00C18D123F7ABCD00C13B6B /* CompanyViewModel.swift */,
 			);
 			path = Company;
 			sourceTree = "<group>";
@@ -241,6 +240,7 @@
 				C0532C5E23F706B8002D59A3 /* Company.swift */,
 				C0532C6023F70811002D59A3 /* CompanyType.swift */,
 				C0532C6A23F7359C002D59A3 /* User.swift */,
+				C0FE08D923FAEDB200D9024D /* Enterprise.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -555,7 +555,6 @@
 				C0FE08CA23F8999500D9024D /* API.swift in Sources */,
 				C00C18BE23F750C300C13B6B /* CompaniesViewController.swift in Sources */,
 				C00C18CB23F7A69900C13B6B /* CompanyCell.swift in Sources */,
-				C00C18D223F7ABCD00C13B6B /* CompanyViewModel.swift in Sources */,
 				C0532C6823F725CE002D59A3 /* LoginViewModel.swift in Sources */,
 				C0FE08CB23F8999500D9024D /* APICacheManager.swift in Sources */,
 				C0FE08CF23F89B0500D9024D /* ChallengeAPI.swift in Sources */,
@@ -567,6 +566,7 @@
 				C00C18CE23F7ABB300C13B6B /* CompanyViewController.swift in Sources */,
 				C0FE08CC23F8999500D9024D /* APIRequest.swift in Sources */,
 				C0532C5F23F706B8002D59A3 /* Company.swift in Sources */,
+				C0FE08DA23FAEDB200D9024D /* Enterprise.swift in Sources */,
 				C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

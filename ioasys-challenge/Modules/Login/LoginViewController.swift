@@ -29,11 +29,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if shouldLoginAutomatic {
-             loginViewModel.tryLogin(with: "gabriel@gmail.com", password: "12345")
+             loginViewModel.tryLogin(with: "testeapple@ioasys.com.br", password: "12341234")
         }
     }
     
     func setupView() {
+
         emailTF.attributedPlaceholder = NSAttributedString(string: "insert your email",
                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
       

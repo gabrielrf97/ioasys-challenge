@@ -7,6 +7,7 @@ target 'ioasys-challenge' do
 
   # Pods for ioasys-challenge
   pod 'Alamofire'
+  pod 'SDWebImage'
 
   target 'ioasys-challengeTests' do
     inherit! :search_paths

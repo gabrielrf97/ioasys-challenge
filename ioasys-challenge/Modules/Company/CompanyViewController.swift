@@ -17,21 +17,24 @@ class CompanyViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UITextView!
     
-    let companyViewModel = CompanyViewModel()
-    var companyId = 0
+    var company: CompanyInfo!
     
     override func loadView() {
         super.loadView()
         descriptionLabel.sizeToFit()
-        calculateScrollViewSize()
-    }
-    
-    func calculateScrollViewSize() {
-        scrollView.contentSize = CGSize(width: contentView.intrinsicContentSize.width, height: contentView.intrinsicContentSize.height * 2) 
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let _pictureUrl = company.pictureUrl {
+            companyImageView.sd_setImage(with: URL(fileURLWithPath: _pictureUrl), placeholderImage: UIImage(named: "companyPlaceholder"), context: nil)
+        }
+        nameLabel.text = company.name
+        locationLabel.text = company.location
+        descriptionLabel.text = company.description
 
     }
     

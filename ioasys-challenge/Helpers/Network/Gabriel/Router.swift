@@ -18,6 +18,10 @@ enum Router {
     
     static var version = "/v1"
     
+    static var emptyUrl: String {
+        return "\(Router.domain)\(Router.version)"
+    }
+    
     var url: String {
         return "\(Router.domain)\(Router.version)\(self.path)"
     }
@@ -38,12 +42,12 @@ enum Router {
     
     var headers: HTTPHeaders? {
         guard let token = AppAuth.shared.auth?.token,
-            let uid = AppAuth.shared.auth?.user.email,
+            let uid = AppAuth.shared.auth?.uid,
             let client = AppAuth.shared.auth?.client
             else {
             return [:]
         }
-        return ["token": "\(token)",
+        return ["access-token": "\(token)",
                 "uid":"\(uid)",
                 "client":"\(client)"]
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wma-5R-eJJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fYs-eA-v9L">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilepic" translatesAutoresizingMaskIntoConstraints="NO" id="oDR-0v-cvZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="companyPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="oDR-0v-cvZ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
                             </imageView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMP-8i-asH" userLabel="SV-H1">
@@ -87,7 +87,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title=" Back">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.93869894740000004" green="0.33997786050000001" blue="0.50579351189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="black">
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -133,21 +133,15 @@
                         <viewLayoutGuide key="safeArea" id="hxr-B1-0Lx"/>
                     </view>
                     <navigationItem key="navigationItem" id="mNf-7O-3Hn"/>
-                    <connections>
-                        <outlet property="companyImageView" destination="oDR-0v-cvZ" id="1A8-w7-CGJ"/>
-                        <outlet property="descriptionLabel" destination="fAw-ot-4jx" id="4VR-Oe-N6O"/>
-                        <outlet property="locationLabel" destination="06f-dZ-BUh" id="jM2-mc-3ER"/>
-                        <outlet property="nameLabel" destination="DhI-Wh-msj" id="AYF-wA-Tj9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAq-iY-Bdt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1502.8985507246377" y="68.973214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Company View Controller-->
         <scene sceneID="rjy-9a-XFd">
             <objects>
-                <viewController id="fYs-eA-v9L" sceneMemberID="viewController">
+                <viewController id="fYs-eA-v9L" customClass="CompanyViewController" customModule="ioasys_challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kfj-Gg-hfI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +152,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZT-c1-E3W" userLabel="contentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilepic" translatesAutoresizingMaskIntoConstraints="NO" id="Ljz-m9-NrE">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="companyPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ljz-m9-NrE">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
                                             </imageView>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54y-aM-kZo" userLabel="SV-V1">
@@ -257,12 +251,15 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title=" Back">
-                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.93869894740000004" green="0.33997786050000001" blue="0.50579351189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="black">
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <action selector="backTapped:" destination="fYs-eA-v9L" eventType="touchUpInside" id="1ON-F3-daC"/>
+                                </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWk-2v-fVP" userLabel="SV-V1">
                                 <rect key="frame" x="32" y="0.0" width="30" height="45"/>
@@ -296,6 +293,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zxv-lQ-tb0"/>
                     </view>
+                    <connections>
+                        <outlet property="companyImageView" destination="Ljz-m9-NrE" id="ocD-OY-s1Y"/>
+                        <outlet property="contentView" destination="6ZT-c1-E3W" id="tdC-hl-VVi"/>
+                        <outlet property="descriptionLabel" destination="2Fh-lk-Vaw" id="RYA-3N-vNI"/>
+                        <outlet property="locationLabel" destination="7Or-u1-BGl" id="oNz-p7-eFB"/>
+                        <outlet property="nameLabel" destination="9Bb-ZL-9J0" id="GP7-CJ-Zbv"/>
+                        <outlet property="scrollView" destination="mrb-bp-ihe" id="07N-vX-aa1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0q-Ny-uTz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,6 +308,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="profilepic" width="949.5" height="949"/>
+        <image name="companyPlaceholder" width="375" height="205"/>
     </resources>
 </document>

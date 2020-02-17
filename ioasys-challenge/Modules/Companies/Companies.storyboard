@@ -42,6 +42,9 @@
                                     <string>Title</string>
                                     <string>Title</string>
                                 </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="Eov-Ge-2Op" id="M9y-32-bTk"/>
+                                </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E1f-xs-h2I">
                                 <rect key="frame" x="0.0" y="196" width="414" height="700"/>
@@ -81,7 +84,7 @@
                     <connections>
                         <outlet property="companiesTableView" destination="E1f-xs-h2I" id="8Cu-6c-QtG"/>
                         <outlet property="navigationBar" destination="s6i-C9-D40" id="Kl8-YK-Jo9"/>
-                        <outlet property="searchBar" destination="lDF-gT-rbH" id="8Nu-2P-zZU"/>
+                        <outlet property="searchBar" destination="lDF-gT-rbH" id="8N9-3d-doq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vv5-bb-qJn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

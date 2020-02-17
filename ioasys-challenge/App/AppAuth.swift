@@ -18,17 +18,19 @@ enum AuthKeys: String {
     case auth = "auth"
 }
 
-class AuthModel: NSCoding{
+class AuthModel: NSObject, NSCoding{
     
-    var user: User
+    var password: String
     var client: String
     var token: String
+    var email: String
     var uid: String {
-        return self.user.email
+        return self.email
     }
     
-    init(user: User, client: String, token: String) {
-        self.user = user
+    init(email: String, password: String, client: String, token: String) {
+        self.email = email
+        self.password = password
         self.client = client
         self.token = token
     }
@@ -36,20 +38,15 @@ class AuthModel: NSCoding{
     required convenience init?(coder: NSCoder) {
         let email = coder.decodeObject(forKey: AuthKeys.email.rawValue) as! String
         let password = coder.decodeObject(forKey: AuthKeys.password.rawValue) as! String
-        let id = coder.decodeInteger(forKey: AuthKeys.id.rawValue)
-        let name = coder.decodeObject(forKey: AuthKeys.name.rawValue) as! String
         let token = coder.decodeObject(forKey: AuthKeys.token.rawValue) as! String
         let client = coder.decodeObject(forKey: AuthKeys.client.rawValue) as! String
         
-        let user = User(id: id, email: email, password: password, name: name)
-        self.init(user: user, client: client, token: token)
+        self.init(email: email, password: password, client: client, token: token)
     }
     
     func encode(with coder: NSCoder) {
-        coder.encode(user.email, forKey: AuthKeys.email.rawValue)
-        coder.encode(user.password, forKey: AuthKeys.password.rawValue)
-        coder.encode(user.id, forKey: AuthKeys.id.rawValue)
-        coder.encode(user.name, forKey: AuthKeys.name.rawValue)
+        coder.encode(email, forKey: AuthKeys.email.rawValue)
+        coder.encode(password, forKey: AuthKeys.password.rawValue)
         coder.encode(client, forKey: AuthKeys.client.rawValue)
         coder.encode(token, forKey: AuthKeys.token.rawValue)
     }
@@ -78,14 +75,14 @@ class AppAuth {
         }
     }
     
-    func update(user: User, client: String, token: String) {
-        self.signin(user: user, client: client, token: token)
+    func update(email: String, password: String, client: String, token: String) {
+        self.signin(email: email, password: password, client: client, token: token)
     }
     
-    func signin(user: User, client: String, token: String) {
-        let auth = AuthModel(user: user, client: client, token: token)
+    func signin(email: String, password: String, client: String, token: String) {
+        let auth = AuthModel(email: email, password: password, client: client, token: token)
         self.auth = auth
-        let archievedAuth = try? NSKeyedArchiver.archivedData(withRootObject: auth, requiringSecureCoding: true)
+        let archievedAuth = try? NSKeyedArchiver.archivedData(withRootObject: auth, requiringSecureCoding: false)
         UserDefaults.standard.setValue(archievedAuth, forKey: AuthKeys.auth.rawValue)
     }
     

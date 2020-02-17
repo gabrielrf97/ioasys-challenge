@@ -11,11 +11,13 @@ import UIKit
 class CompaniesViewController: UIViewController {
 
     @IBOutlet weak var navigationBar: UINavigationBar!
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var companiesTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
-//    var companiesViewModel:
+    var resultSearchController = UISearchController()
+    var companiesViewModel = CompaniesViewModel()
     var cellIdentifier = "CompanyCell"
+    var companies = [CompanyInfo]()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -28,21 +30,22 @@ class CompaniesViewController: UIViewController {
     
     func setupView() {
         companiesTableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        var keyWindow = UIApplication.shared.windows.filter{$0.isKeyWindow}.first
+        companiesViewModel.companiesDelegate = self
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        searchBar.delegate = self
     }
-
 }
 
 extension CompaniesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return companies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CompanyCell else {
             return UITableViewCell()
         }
-//        cell.titleLbl.text = "Google LLC"
+        cell.configure(with: companies[indexPath.row])
         return cell
     }
     
@@ -51,12 +54,32 @@ extension CompaniesViewController: UITableViewDelegate, UITableViewDataSource {
             let companyVC = UIStoryboard(name: "Company", bundle: nil).instantiateInitialViewController() as? CompanyViewController else {
             return
         }
-        companyVC.companyId = cell.id
+        companyVC.company = companies[indexPath.row]
         companyVC.modalPresentationStyle = .fullScreen
         self.present(companyVC, animated: true, completion: {
             cell.setSelected(false, animated: false)
         })
     }
-    
-    
 }
+
+extension CompaniesViewController: CompaniesViewDelegate {
+    func updateView(companies: [CompanyInfo]) {
+        self.companies = companies
+        self.companiesTableView.reloadData()
+    }
+}
+
+extension CompaniesViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if !searchText.isEmpty {
+             companiesViewModel.fetchCompanies(containing: searchText)
+        }
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        view.endEditing(false)
+    }
+}
+

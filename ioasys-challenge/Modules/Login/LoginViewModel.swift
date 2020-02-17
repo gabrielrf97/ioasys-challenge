@@ -19,10 +19,9 @@ class LoginViewModel {
     
     weak var viewDelegate: LoginViewDelegate?
     
-    init() { // consider dependency injection for network
-        
-    }
+    init() {}
     
+//    @discardableResult + -> Bool
     func tryLogin(with email: String, password: String) {
         var errors = [String]()
         
@@ -54,19 +53,17 @@ class LoginViewModel {
         let params : [String:Any] = ["email":email,
                       "password":password]
         
-        Network.shared.request(Router.login, parameters: params, model: User.self, completion: { response in
+        Network.shared.request(.login, parameters: params, model: User.self, completion: { response in
             switch response {
             case .success(let response):
                 if let user = response.model {
-                    AppAuth.shared.signin(user: user, client: response.client, token: response.token)
+                    AppAuth.shared.signin(email: email, password: password, client: response.client, token: response.token)
                 }
                 self.viewDelegate?.performedLoginSucessfuly()
             case .failure(let error):
                 self.viewDelegate?.loginAttemptFailed(with: error)
             }
         })
-        
-        viewDelegate?.performedLoginSucessfuly()
     }
 
 }

@@ -23,7 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let initialVc : UIViewController?
         
-        if (AppAuth.shared.auth?.user) != nil {
+        if (AppAuth.shared.auth?.email) != nil {
+        // TODO: Should perform automatic login in future, instead of pushing VC.
             initialVc = UIStoryboard(name: "Companies", bundle: nil).instantiateInitialViewController()
         } else {
             initialVc = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController()

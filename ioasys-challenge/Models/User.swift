@@ -12,14 +12,17 @@ class User: Decodable {
     
     let id: Int
     let email: String
-    let password: String
+    var password: String?
     let name: String
+    var photoUrl: String?
     
-    init(id: Int, email: String, password: String, name: String) {
-        self.id = id
-        self.email = email
-        self.password = password
-        self.name = password
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let response = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .investor)
+        id = try response.decode(Int.self, forKey: .id)
+        email = try response.decode(String.self, forKey: .email)
+        name = try response.decode(String.self, forKey: .name)
+        photoUrl = try response.decode(String.self, forKey: .photoUrl)
     }
     
     static func validate(email: String) -> (result: Bool, error: String?) {
@@ -58,5 +61,13 @@ class User: Decodable {
         }
         
         return (sucess, errorMessage)
+    }
+    
+    private enum CodingKeys: String, CodingKey  {
+        case name = "investor_name"
+        case photoUrl = "photo"
+        case email = "email"
+        case id = "id"
+        case investor = "investor"
     }
 }
