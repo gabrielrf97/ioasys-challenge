@@ -33,7 +33,7 @@ class CompaniesViewModel {
     func fetchCompanies(containing string: String) {
         
         let params : Parameters = ["name": string]
-        Network.shared.request(Router.getCompany, parameters: params, model: Entreprises.self, completion: { response in
+        Network.shared.request(Router.getCompany, parameters: params, model: Companies.self, completion: { response in
             switch response {
             case .success(let response):
                 guard let enterprises = response.model?.enterprises else {
@@ -48,7 +48,7 @@ class CompaniesViewModel {
         })
     }
     
-    func castModelToViewType(enterprises: [Enterprise]) {
+    func castModelToViewType(enterprises: [Company]) {
         companiesInfo.removeAll()
         
         for company in enterprises {
@@ -66,7 +66,7 @@ class CompaniesViewModel {
                 location.append(country.capitalized)
             }
             
-            var companyInfo = CompanyInfo(id: company.id, pictureUrl: "\(Router.emptyUrl)\(photoUrl)" ?? nil, name: company.name, location: location, type: "", description: company.description)
+            var companyInfo = CompanyInfo(id: company.id, pictureUrl: "\(Router.emptyUrl)\(photoUrl)" ?? nil, name: company.name, location: location, type: company.type.name, description: company.description)
     
             companiesInfo.append(companyInfo)
         }

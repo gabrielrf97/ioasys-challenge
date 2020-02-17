@@ -25,6 +25,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         loginViewModel.viewDelegate = self
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -96,9 +97,5 @@ extension LoginViewController: LoginViewDelegate {
             passwordTF.attributedPlaceholder = NSAttributedString(string: passwordError,
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
         }
-    }
-    
-    func startedLogin() {
-        
     }
 }

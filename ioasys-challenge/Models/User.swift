@@ -12,7 +12,6 @@ class User: Decodable {
     
     let id: Int
     let email: String
-    var password: String?
     let name: String
     var photoUrl: String?
     

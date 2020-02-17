@@ -16,6 +16,7 @@ class CompanyViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UITextView!
+    @IBOutlet weak var companyType: UILabel!
     
     var company: CompanyInfo!
     
@@ -29,13 +30,34 @@ class CompanyViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+       setupView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        changeTextViewSize()
+    }
+    
+    func setupView() {
         if let _pictureUrl = company.pictureUrl {
-            companyImageView.sd_setImage(with: URL(fileURLWithPath: _pictureUrl), placeholderImage: UIImage(named: "companyPlaceholder"), context: nil)
-        }
+                   companyImageView.sd_setImage(with: URL(fileURLWithPath: _pictureUrl), placeholderImage: UIImage(named: "companyPlaceholder"), context: nil)
+               }
         nameLabel.text = company.name
         locationLabel.text = company.location
         descriptionLabel.text = company.description
-
+       
+        companyType.text = company.type
+        companyType.layer.cornerRadius = 8
+        companyType.layer.masksToBounds = true
+        companyType.frame.size.width = changeTextViewSize()
+        
+        view.layoutIfNeeded()
+    }
+    
+    func changeTextViewSize() -> CGFloat {
+        let txtField = UITextField(frame: .zero)
+        txtField.text = company.type
+        txtField.sizeToFit()
+        return txtField.frame.size.width + 40
     }
     
     @IBAction func backTapped(_ sender: Any) {

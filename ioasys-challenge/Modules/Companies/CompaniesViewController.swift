@@ -25,6 +25,7 @@ class CompaniesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         setupView()
     }
     

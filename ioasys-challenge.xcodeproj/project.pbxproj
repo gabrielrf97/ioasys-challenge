@@ -19,11 +19,7 @@
 		C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2923F705FA002D59A3 /* AppDelegate.swift */; };
 		C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */; };
 		C0532C3323F705FD002D59A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0532C3223F705FD002D59A3 /* Assets.xcassets */; };
-		C0532C4123F705FD002D59A3 /* ioasys_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C4023F705FD002D59A3 /* ioasys_challengeTests.swift */; };
 		C0532C4C23F705FE002D59A3 /* ioasys_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C4B23F705FE002D59A3 /* ioasys_challengeUITests.swift */; };
-		C0532C5D23F706AF002D59A3 /* BusinessMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C5C23F706AF002D59A3 /* BusinessMan.swift */; };
-		C0532C5F23F706B8002D59A3 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C5E23F706B8002D59A3 /* Company.swift */; };
-		C0532C6123F70811002D59A3 /* CompanyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6023F70811002D59A3 /* CompanyType.swift */; };
 		C0532C6323F7259F002D59A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6223F7259F002D59A3 /* LoginViewController.swift */; };
 		C0532C6623F725B9002D59A3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0532C6523F725B9002D59A3 /* Login.storyboard */; };
 		C0532C6823F725CE002D59A3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6723F725CE002D59A3 /* LoginViewModel.swift */; };
@@ -36,7 +32,9 @@
 		C0FE08D223F89D2F00D9024D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D023F89D2F00D9024D /* Network.swift */; };
 		C0FE08D323F89D2F00D9024D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D123F89D2F00D9024D /* Router.swift */; };
 		C0FE08D823F9B26C00D9024D /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */; };
-		C0FE08DA23FAEDB200D9024D /* Enterprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D923FAEDB200D9024D /* Enterprise.swift */; };
+		C0FE08DA23FAEDB200D9024D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D923FAEDB200D9024D /* Company.swift */; };
+		C0FE08E223FB13F700D9024D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08E123FB13F700D9024D /* NetworkService.swift */; };
+		C0FE08E523FB178300D9024D /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08E423FB178300D9024D /* UserTests.swift */; };
 		DEB7ED9F19B8DB3DDEDC2044 /* Pods_ioasys_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D966FB77E374B1905601AB /* Pods_ioasys_challengeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,14 +75,10 @@
 		C0532C3223F705FD002D59A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0532C3723F705FD002D59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0532C3C23F705FD002D59A3 /* ioasys-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ioasys-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0532C4023F705FD002D59A3 /* ioasys_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasys_challengeTests.swift; sourceTree = "<group>"; };
 		C0532C4223F705FD002D59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0532C4723F705FE002D59A3 /* ioasys-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ioasys-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0532C4B23F705FE002D59A3 /* ioasys_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasys_challengeUITests.swift; sourceTree = "<group>"; };
 		C0532C4D23F705FE002D59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0532C5C23F706AF002D59A3 /* BusinessMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMan.swift; sourceTree = "<group>"; };
-		C0532C5E23F706B8002D59A3 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
-		C0532C6023F70811002D59A3 /* CompanyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyType.swift; sourceTree = "<group>"; };
 		C0532C6223F7259F002D59A3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C0532C6523F725B9002D59A3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		C0532C6723F725CE002D59A3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -97,7 +91,9 @@
 		C0FE08D023F89D2F00D9024D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C0FE08D123F89D2F00D9024D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
-		C0FE08D923FAEDB200D9024D /* Enterprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enterprise.swift; sourceTree = "<group>"; };
+		C0FE08D923FAEDB200D9024D /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		C0FE08E123FB13F700D9024D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C0FE08E423FB178300D9024D /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		D897469708DC0988330FEE3A /* Pods-ioasys-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8C6E78E2FC5ADFBE3C6265A /* Pods-ioasys-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E65FDA937353031F877CF1EC /* Pods_ioasys_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioasys_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,7 +214,7 @@
 		C0532C3F23F705FD002D59A3 /* ioasys-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				C0532C4023F705FD002D59A3 /* ioasys_challengeTests.swift */,
+				C0FE08E323FB16DC00D9024D /* Models */,
 				C0532C4223F705FD002D59A3 /* Info.plist */,
 			);
 			path = "ioasys-challengeTests";
@@ -236,11 +232,8 @@
 		C0532C5923F7068B002D59A3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C0532C5C23F706AF002D59A3 /* BusinessMan.swift */,
-				C0532C5E23F706B8002D59A3 /* Company.swift */,
-				C0532C6023F70811002D59A3 /* CompanyType.swift */,
 				C0532C6A23F7359C002D59A3 /* User.swift */,
-				C0FE08D923FAEDB200D9024D /* Enterprise.swift */,
+				C0FE08D923FAEDB200D9024D /* Company.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,6 +281,7 @@
 			children = (
 				C0FE08D023F89D2F00D9024D /* Network.swift */,
 				C0FE08D123F89D2F00D9024D /* Router.swift */,
+				C0FE08E123FB13F700D9024D /* NetworkService.swift */,
 			);
 			path = Gabriel;
 			sourceTree = "<group>";
@@ -309,6 +303,14 @@
 				C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C0FE08E323FB16DC00D9024D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0FE08E423FB178300D9024D /* UserTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F9FF5C7916CA6C1A3E886F4D /* Pods */ = {
@@ -547,8 +549,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0FE08E223FB13F700D9024D /* NetworkService.swift in Sources */,
 				C0532C6323F7259F002D59A3 /* LoginViewController.swift in Sources */,
-				C0532C5D23F706AF002D59A3 /* BusinessMan.swift in Sources */,
 				C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */,
 				C0FE08B423F8690800D9024D /* AppAuth.swift in Sources */,
 				C0FE08D823F9B26C00D9024D /* ViewControllerExt.swift in Sources */,
@@ -562,11 +564,9 @@
 				C0FE08D323F89D2F00D9024D /* Router.swift in Sources */,
 				C0FE08D223F89D2F00D9024D /* Network.swift in Sources */,
 				C00C18C223F750D900C13B6B /* CompaniesViewModel.swift in Sources */,
-				C0532C6123F70811002D59A3 /* CompanyType.swift in Sources */,
 				C00C18CE23F7ABB300C13B6B /* CompanyViewController.swift in Sources */,
 				C0FE08CC23F8999500D9024D /* APIRequest.swift in Sources */,
-				C0532C5F23F706B8002D59A3 /* Company.swift in Sources */,
-				C0FE08DA23FAEDB200D9024D /* Enterprise.swift in Sources */,
+				C0FE08DA23FAEDB200D9024D /* Company.swift in Sources */,
 				C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,7 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0532C4123F705FD002D59A3 /* ioasys_challengeTests.swift in Sources */,
+				C0FE08E523FB178300D9024D /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

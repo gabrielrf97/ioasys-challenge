@@ -10,7 +10,6 @@ import Foundation
 
 protocol LoginViewDelegate: class {
     func performedLoginSucessfuly()
-    func startedLogin()
     func loginAttemptFailed(with errorMessage: String)
     func fieldValidationFailed(errors: [String])
 }
@@ -21,7 +20,6 @@ class LoginViewModel {
     
     init() {}
     
-//    @discardableResult + -> Bool
     func tryLogin(with email: String, password: String) {
         var errors = [String]()
         
@@ -30,7 +28,6 @@ class LoginViewModel {
         
         if emailValidation.result && passwordValidation.result {
             performLogin(with: email, password)
-            viewDelegate?.startedLogin()
         } else {
             if let emailError = emailValidation.error {
                 errors.append(emailError)
@@ -45,7 +42,6 @@ class LoginViewModel {
             }
             viewDelegate?.fieldValidationFailed(errors: errors)
         }
-        
     }
     
     func performLogin(with email: String, _ password: String) {
@@ -56,14 +52,11 @@ class LoginViewModel {
         Network.shared.request(.login, parameters: params, model: User.self, completion: { response in
             switch response {
             case .success(let response):
-                if let user = response.model {
-                    AppAuth.shared.signin(email: email, password: password, client: response.client, token: response.token)
-                }
+                AppAuth.shared.signin(email: email, password: password, client: response.client, token: response.token)
                 self.viewDelegate?.performedLoginSucessfuly()
             case .failure(let error):
                 self.viewDelegate?.loginAttemptFailed(with: error)
             }
         })
     }
-
 }

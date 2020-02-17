@@ -176,10 +176,21 @@
                                                     <constraint firstAttribute="height" constant="222" id="cdJ-37-srY"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70f-rk-0WT">
+                                                <rect key="frame" x="32" y="300" width="100" height="32"/>
+                                                <color key="backgroundColor" red="0.93869894740000004" green="0.33997786050000001" blue="0.50579351189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="HYY-HS-W6y"/>
+                                                    <constraint firstAttribute="height" constant="32" id="Lqu-iW-YOi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZJO-yD-pac">
-                                                <rect key="frame" x="32" y="300" width="350" height="596"/>
+                                                <rect key="frame" x="32" y="340" width="350" height="556"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bb-ZL-9J0">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Bb-ZL-9J0">
                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="38"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="38" id="lCF-WA-vqc"/>
@@ -198,7 +209,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Fh-lk-Vaw">
-                                                        <rect key="frame" x="0.0" y="86" width="350" height="510"/>
+                                                        <rect key="frame" x="0.0" y="86" width="350" height="470"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -217,13 +228,15 @@
                                             <constraint firstAttribute="trailing" secondItem="Ljz-m9-NrE" secondAttribute="trailing" id="Ixy-k8-uRg"/>
                                             <constraint firstItem="ZJO-yD-pac" firstAttribute="leading" secondItem="F8v-YI-89n" secondAttribute="trailing" id="Jve-aT-YUs"/>
                                             <constraint firstItem="sNx-bi-3p4" firstAttribute="top" secondItem="54y-aM-kZo" secondAttribute="bottom" id="LfG-Bf-bHi"/>
-                                            <constraint firstItem="ZJO-yD-pac" firstAttribute="top" secondItem="54y-aM-kZo" secondAttribute="bottom" id="M0u-xF-WnG"/>
+                                            <constraint firstItem="ZJO-yD-pac" firstAttribute="top" secondItem="70f-rk-0WT" secondAttribute="bottom" constant="8" id="QAs-GU-AxB"/>
                                             <constraint firstItem="Ljz-m9-NrE" firstAttribute="height" secondItem="6ZT-c1-E3W" secondAttribute="height" multiplier="270/896" id="RMP-8N-ETW"/>
                                             <constraint firstItem="54y-aM-kZo" firstAttribute="height" secondItem="6ZT-c1-E3W" secondAttribute="height" multiplier="30/896" id="SyX-c2-gxQ"/>
                                             <constraint firstItem="54y-aM-kZo" firstAttribute="centerX" secondItem="6ZT-c1-E3W" secondAttribute="centerX" id="Ucm-lU-lJg"/>
+                                            <constraint firstItem="70f-rk-0WT" firstAttribute="leading" secondItem="F8v-YI-89n" secondAttribute="trailing" id="YvM-wH-DZd"/>
                                             <constraint firstItem="Ljz-m9-NrE" firstAttribute="top" secondItem="6ZT-c1-E3W" secondAttribute="top" id="ccH-zp-o4Z"/>
                                             <constraint firstItem="54y-aM-kZo" firstAttribute="top" secondItem="Ljz-m9-NrE" secondAttribute="bottom" id="czX-Ss-2pL"/>
                                             <constraint firstItem="F8v-YI-89n" firstAttribute="top" secondItem="54y-aM-kZo" secondAttribute="bottom" id="i77-Pm-f0T"/>
+                                            <constraint firstItem="70f-rk-0WT" firstAttribute="top" secondItem="54y-aM-kZo" secondAttribute="bottom" id="iRI-0p-pgy"/>
                                             <constraint firstAttribute="trailing" secondItem="sNx-bi-3p4" secondAttribute="trailing" id="iaS-Ng-YL3"/>
                                             <constraint firstItem="Ljz-m9-NrE" firstAttribute="leading" secondItem="6ZT-c1-E3W" secondAttribute="leading" id="mjP-4C-IkY"/>
                                             <constraint firstItem="F8v-YI-89n" firstAttribute="leading" secondItem="6ZT-c1-E3W" secondAttribute="leading" id="qSl-qK-b9p"/>
@@ -295,6 +308,7 @@
                     </view>
                     <connections>
                         <outlet property="companyImageView" destination="Ljz-m9-NrE" id="ocD-OY-s1Y"/>
+                        <outlet property="companyType" destination="70f-rk-0WT" id="eCv-uA-MXO"/>
                         <outlet property="contentView" destination="6ZT-c1-E3W" id="tdC-hl-VVi"/>
                         <outlet property="descriptionLabel" destination="2Fh-lk-Vaw" id="RYA-3N-vNI"/>
                         <outlet property="locationLabel" destination="7Or-u1-BGl" id="oNz-p7-eFB"/>
