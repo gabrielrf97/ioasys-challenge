@@ -13,6 +13,7 @@ class CompaniesViewController: UIViewController {
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var companiesTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var orientationLabel: UILabel!
     
     var resultSearchController = UISearchController()
     var companiesViewModel = CompaniesViewModel()
@@ -34,6 +35,11 @@ class CompaniesViewController: UIViewController {
         companiesViewModel.companiesDelegate = self
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         searchBar.delegate = self
+        configureOrientationLabel()
+    }
+    
+    func configureOrientationLabel() {
+         orientationLabel.isHidden = companies.count == 0 ? false : true
     }
 }
 
@@ -66,6 +72,7 @@ extension CompaniesViewController: UITableViewDelegate, UITableViewDataSource {
 extension CompaniesViewController: CompaniesViewDelegate {
     func updateView(companies: [CompanyInfo]) {
         self.companies = companies
+        self.configureOrientationLabel()
         self.companiesTableView.reloadData()
     }
 }

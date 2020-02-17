@@ -19,19 +19,11 @@ class LoginViewController: UIViewController {
     
     let loginViewModel = LoginViewModel()
     
-    var shouldLoginAutomatic = true // to speed up things
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         loginViewModel.viewDelegate = self
         self.hideKeyboardWhenTappedAround()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        if shouldLoginAutomatic {
-             loginViewModel.tryLogin(with: "testeapple@ioasys.com.br", password: "12341234")
-        }
     }
     
     func setupView() {

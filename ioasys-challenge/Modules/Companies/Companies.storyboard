@@ -55,6 +55,16 @@
                                     <outlet property="delegate" destination="Eov-Ge-2Op" id="Lsx-PD-h0W"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite algo para iniciar a busca" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-Pp-WLL">
+                                <rect key="frame" x="97" y="436" width="220" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Bpz-I3-7Ia"/>
+                                    <constraint firstAttribute="height" constant="24" id="pVv-5N-g6x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-Um-Lky">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <color key="backgroundColor" red="0.1529197991" green="0.15295344590000001" blue="0.15291768310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,11 +81,14 @@
                             <constraint firstItem="s6i-C9-D40" firstAttribute="trailing" secondItem="1gm-Lu-6QX" secondAttribute="trailing" id="Lvd-E2-pEZ"/>
                             <constraint firstItem="lDF-gT-rbH" firstAttribute="height" secondItem="1gm-Lu-6QX" secondAttribute="height" multiplier="56/818" id="R2T-11-5G5"/>
                             <constraint firstItem="1gm-Lu-6QX" firstAttribute="bottom" secondItem="E1f-xs-h2I" secondAttribute="bottom" constant="-34" id="ZP8-ct-VdX"/>
+                            <constraint firstItem="Ncf-Pp-WLL" firstAttribute="centerY" secondItem="ZAl-YS-OgJ" secondAttribute="centerY" id="Zh5-K8-c5t"/>
                             <constraint firstItem="L0m-Um-Lky" firstAttribute="height" secondItem="1gm-Lu-6QX" secondAttribute="height" multiplier="44/818" id="e49-gu-XF2"/>
                             <constraint firstItem="lDF-gT-rbH" firstAttribute="top" secondItem="s6i-C9-D40" secondAttribute="bottom" id="fGI-y9-0v3"/>
                             <constraint firstItem="lDF-gT-rbH" firstAttribute="leading" secondItem="1gm-Lu-6QX" secondAttribute="leading" id="i7H-Gh-6Sk"/>
+                            <constraint firstItem="Ncf-Pp-WLL" firstAttribute="centerX" secondItem="ZAl-YS-OgJ" secondAttribute="centerX" id="k8a-Kw-U8o"/>
                             <constraint firstItem="E1f-xs-h2I" firstAttribute="leading" secondItem="1gm-Lu-6QX" secondAttribute="leading" id="ss5-En-X85"/>
                             <constraint firstItem="1gm-Lu-6QX" firstAttribute="trailing" secondItem="E1f-xs-h2I" secondAttribute="trailing" id="vtI-Cc-tD1"/>
+                            <constraint firstItem="Ncf-Pp-WLL" firstAttribute="centerX" secondItem="ZAl-YS-OgJ" secondAttribute="centerX" id="wTy-bL-HaK"/>
                             <constraint firstItem="L0m-Um-Lky" firstAttribute="top" secondItem="ZAl-YS-OgJ" secondAttribute="top" id="wu5-iD-SlP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1gm-Lu-6QX"/>
@@ -84,6 +97,7 @@
                     <connections>
                         <outlet property="companiesTableView" destination="E1f-xs-h2I" id="8Cu-6c-QtG"/>
                         <outlet property="navigationBar" destination="s6i-C9-D40" id="Kl8-YK-Jo9"/>
+                        <outlet property="orientationLabel" destination="Ncf-Pp-WLL" id="yMp-Ui-MTM"/>
                         <outlet property="searchBar" destination="lDF-gT-rbH" id="8N9-3d-doq"/>
                     </connections>
                 </viewController>
