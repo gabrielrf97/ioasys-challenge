@@ -314,6 +314,7 @@
                         <outlet property="locationLabel" destination="7Or-u1-BGl" id="oNz-p7-eFB"/>
                         <outlet property="nameLabel" destination="9Bb-ZL-9J0" id="GP7-CJ-Zbv"/>
                         <outlet property="scrollView" destination="mrb-bp-ihe" id="07N-vX-aa1"/>
+                        <outlet property="typeWidth" destination="HYY-HS-W6y" id="HJT-t7-zZB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0q-Ny-uTz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

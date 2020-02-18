@@ -17,6 +17,7 @@ class CompanyViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UITextView!
     @IBOutlet weak var companyType: UILabel!
+    @IBOutlet weak var typeWidth: NSLayoutConstraint!
     
     var company: CompanyInfo!
     
@@ -27,14 +28,12 @@ class CompanyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-       setupView()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        changeTextViewSize()
+        typeWidth.constant = getIdealSize()
+        self.view.layoutIfNeeded()
     }
     
     func setupView() {
@@ -48,16 +47,13 @@ class CompanyViewController: UIViewController {
         companyType.text = company.type
         companyType.layer.cornerRadius = 8
         companyType.layer.masksToBounds = true
-        companyType.frame.size.width = changeTextViewSize()
-        
-        view.layoutIfNeeded()
     }
     
-    func changeTextViewSize() -> CGFloat {
-        let txtField = UITextField(frame: .zero)
-        txtField.text = company.type
-        txtField.sizeToFit()
-        return txtField.frame.size.width + 40
+    func getIdealSize() -> CGFloat {
+        let label = UILabel(frame: .zero)
+        label.text = company.type
+        label.sizeToFit()
+        return label.frame.size.width + 30
     }
     
     @IBAction func backTapped(_ sender: Any) {

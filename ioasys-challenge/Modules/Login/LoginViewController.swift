@@ -19,11 +19,19 @@ class LoginViewController: UIViewController {
     
     let loginViewModel = LoginViewModel()
     
+    var shouldLogin = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         loginViewModel.viewDelegate = self
         self.hideKeyboardWhenTappedAround()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if shouldLogin {
+            loginViewModel.performLogin(with: "testeapple@ioasys.com.br", "12341234")
+        }
     }
     
     func setupView() {
