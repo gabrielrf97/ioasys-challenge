@@ -46,3 +46,18 @@ struct AppClientServer: ClientServer {
         })
     }
 }
+
+struct MockClientServer: ClientServer {
+    func login(email: String, password: String, completion: @escaping (NetworkLayerResult<User>) -> Void) {
+        if email == "testeapple@ioasys.com.br" && password == "12341234" {
+            let user = User.getMocked()
+            completion(.success(model: user))
+        }
+        completion(.failure(error: "Invalid credentials"))
+    }
+    
+    func requestCompanies(with name: String, completion: @escaping (NetworkLayerResult<[Company]>) -> Void) {
+        let companies = Company.getMocked(count: 5)
+        completion(.success(model: companies))
+    }
+}

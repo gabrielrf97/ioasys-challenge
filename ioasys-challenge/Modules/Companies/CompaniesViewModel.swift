@@ -69,7 +69,7 @@ class CompaniesViewModel {
                 location.append(country.capitalized)
             }
             
-            var companyInfo = CompanyInfo(id: company.id, pictureUrl: "\(Router.emptyUrl)\(photoUrl)" ?? nil, name: company.name, location: location, type: company.type.name, description: company.description)
+            let companyInfo = CompanyInfo(id: company.id, pictureUrl: "\(Router.emptyUrl)\(photoUrl)" ?? nil, name: company.name, location: location, type: company.type.name, description: company.description)
     
             companiesInfo.append(companyInfo)
         }

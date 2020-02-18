@@ -15,6 +15,13 @@ class User: Decodable {
     let name: String
     var photoUrl: String?
     
+    init(id: Int, name: String, email: String, photoUrl: String?) {
+        self.id = id
+        self.email = email
+        self.name = name
+        self.photoUrl = photoUrl
+    }
+    
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let response = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .investor)
@@ -68,5 +75,12 @@ class User: Decodable {
         case email = "email"
         case id = "id"
         case investor = "investor"
+    }
+}
+
+extension User {
+    static func getMocked() -> User {
+        let user = User(id: 1, name: "Gabriel", email: "gabriel@gmail.com", photoUrl: nil)
+        return user
     }
 }

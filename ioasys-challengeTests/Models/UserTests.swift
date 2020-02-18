@@ -15,6 +15,15 @@ class UserTests: XCTestCase {
 
     override func tearDown() {}
     
+    func testSucessfulInit() {
+        let jsonObjectString = """
+        {\"investor\":{\"id\":1,\"investor_name\":\"Teste Apple\",\"email\":\"testeapple@ioasys.com.br\",\"city\":\"BH\",\"country\":\"Brasil\",\"balance\":350000.0,\"photo\":\"/uploads/investor/photo/1/cropped4991818370070749122.jpg\",\"portfolio\":{\"enterprises_number\":0,\"enterprises\":[]},\"portfolio_value\":350000.0,\"first_access\":false,\"super_angel\":false},\"enterprise\":null,\"success\":true}
+        """
+        let json = jsonObjectString.data(using: .utf8)
+        let user = try? JSONDecoder().decode(User.self, from: json!)
+        XCTAssertNotNil(user, "User initialization failed")
+    }
+    
     func testValidEmail() {
         let email = "testeapple@ioasys.com.br"
         let response = User.validate(email: email)

@@ -8,26 +8,51 @@
 
 import XCTest
 
+@testable import ioasys_challenge
 class CompaniesViewModelTests: XCTestCase {
 
+    var suv : CompaniesViewModel!
+    var companies: [CompanyInfo]?
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        companies?.removeAll()
+        let mockedServer = MockClientServer()
+        suv = CompaniesViewModel(server: mockedServer)
+        suv.companiesDelegate = self
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    override func tearDown() {}
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetCompanies() {
+        suv.fetchCompanies(containing: "anystring")
+        XCTAssert(companies?.count != 0, "Test failed in getting mocked data")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testCasting() {
+        let company = Company.mocked()
+        suv.castModelToViewType(enterprises: [company])
+        guard let companyInfo = suv.companiesInfo.first else {
+            XCTFail()
+            return
         }
+        XCTAssert(companyInfo.id == company.id, "CompanyInfo should have a different id")
+        XCTAssert(companyInfo.name == company.name, "CompanyInfo should have a different name")
+        XCTAssert(companyInfo.description == company.description, "CompanyInfo should have a different description")
+        if let photoUrl = company.photoUrl {
+            XCTAssert(companyInfo.pictureUrl == "\(Router.emptyUrl)\(photoUrl)", "CompanyInfo should have a different photoUrl")
+        } else {
+            XCTAssert(companyInfo.pictureUrl == "\(Router.emptyUrl)", "CompanyInfo should have a different photoUrl")
+        }
+        if let location = companyInfo.location, let city = company.city?.capitalized, let country = company.country?.capitalized {
+             XCTAssert( location == "\(city), \(country)", "CompanyInfo should have a different location")
+        }
+        XCTAssert(companyInfo.type == company.type.name, "CompanyInfo should have a different type name")
     }
 
+}
+
+extension CompaniesViewModelTests: CompaniesViewDelegate {
+    func updateView(companies: [CompanyInfo]) {
+        self.companies = companies
+    }
 }

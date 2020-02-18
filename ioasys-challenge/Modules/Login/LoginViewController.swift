@@ -36,12 +36,9 @@ class LoginViewController: UIViewController {
     
     func setupView() {
 
-        emailTF.attributedPlaceholder = NSAttributedString(string: "insert your email",
-                                                           attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        emailTF.setplaceHolderColor(color: .gray, text: "insert your email here")
+        passwordTF.setplaceHolderColor(color: .gray, text: "insert your password")
       
-        passwordTF.attributedPlaceholder = NSAttributedString(string: "insert your password",
-                                                              attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
-        
         loginBtn.layer.cornerRadius = 12
         loginBtn.layer.masksToBounds = true
     }
@@ -89,13 +86,11 @@ extension LoginViewController: LoginViewDelegate {
         }
         if !emailError.isEmpty {
             emailTF.text = ""
-            emailTF.attributedPlaceholder = NSAttributedString(string: emailError,
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            emailTF.setPlaceholderToError(text: emailError)
         }
         if !passwordError.isEmpty {
             passwordTF.text = ""
-            passwordTF.attributedPlaceholder = NSAttributedString(string: passwordError,
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            passwordTF.setPlaceholderToError(text: passwordError)
         }
     }
 }

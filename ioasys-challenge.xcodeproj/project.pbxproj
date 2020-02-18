@@ -27,11 +27,13 @@
 		C0FE08B423F8690800D9024D /* AppAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08B323F8690800D9024D /* AppAuth.swift */; };
 		C0FE08D223F89D2F00D9024D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D023F89D2F00D9024D /* Network.swift */; };
 		C0FE08D323F89D2F00D9024D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D123F89D2F00D9024D /* Router.swift */; };
-		C0FE08D823F9B26C00D9024D /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */; };
+		C0FE08D823F9B26C00D9024D /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D723F9B26C00D9024D /* UIViewControllerExt.swift */; };
 		C0FE08DA23FAEDB200D9024D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D923FAEDB200D9024D /* Company.swift */; };
 		C0FE08E523FB178300D9024D /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08E423FB178300D9024D /* UserTests.swift */; };
 		C0FE093523FBAE8900D9024D /* CompaniesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE093423FBAE8900D9024D /* CompaniesViewModelTests.swift */; };
 		C0FE093723FBB5C000D9024D /* ClientServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE093623FBB5C000D9024D /* ClientServer.swift */; };
+		C0FE093923FBB67A00D9024D /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE093823FBB67A00D9024D /* UITextFieldExt.swift */; };
+		C0FE093B23FBC14100D9024D /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE093A23FBC14100D9024D /* LoginViewModelTests.swift */; };
 		DEB7ED9F19B8DB3DDEDC2044 /* Pods_ioasys_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D966FB77E374B1905601AB /* Pods_ioasys_challengeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,11 +85,13 @@
 		C0FE08B323F8690800D9024D /* AppAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAuth.swift; sourceTree = "<group>"; };
 		C0FE08D023F89D2F00D9024D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C0FE08D123F89D2F00D9024D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
+		C0FE08D723F9B26C00D9024D /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		C0FE08D923FAEDB200D9024D /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		C0FE08E423FB178300D9024D /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		C0FE093423FBAE8900D9024D /* CompaniesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesViewModelTests.swift; sourceTree = "<group>"; };
 		C0FE093623FBB5C000D9024D /* ClientServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientServer.swift; sourceTree = "<group>"; };
+		C0FE093823FBB67A00D9024D /* UITextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
+		C0FE093A23FBC14100D9024D /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		D897469708DC0988330FEE3A /* Pods-ioasys-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8C6E78E2FC5ADFBE3C6265A /* Pods-ioasys-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E65FDA937353031F877CF1EC /* Pods_ioasys_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioasys_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,7 +279,8 @@
 		C0FE08D623F9B25800D9024D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */,
+				C0FE08D723F9B26C00D9024D /* UIViewControllerExt.swift */,
+				C0FE093823FBB67A00D9024D /* UITextFieldExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				C0FE093423FBAE8900D9024D /* CompaniesViewModelTests.swift */,
+				C0FE093A23FBC14100D9024D /* LoginViewModelTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -535,10 +541,11 @@
 				C0532C6323F7259F002D59A3 /* LoginViewController.swift in Sources */,
 				C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */,
 				C0FE08B423F8690800D9024D /* AppAuth.swift in Sources */,
-				C0FE08D823F9B26C00D9024D /* ViewControllerExt.swift in Sources */,
+				C0FE08D823F9B26C00D9024D /* UIViewControllerExt.swift in Sources */,
 				C00C18BE23F750C300C13B6B /* CompaniesViewController.swift in Sources */,
 				C00C18CB23F7A69900C13B6B /* CompanyCell.swift in Sources */,
 				C0532C6823F725CE002D59A3 /* LoginViewModel.swift in Sources */,
+				C0FE093923FBB67A00D9024D /* UITextFieldExt.swift in Sources */,
 				C0532C6B23F7359C002D59A3 /* User.swift in Sources */,
 				C0FE08D323F89D2F00D9024D /* Router.swift in Sources */,
 				C0FE08D223F89D2F00D9024D /* Network.swift in Sources */,
@@ -554,6 +561,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0FE093B23FBC14100D9024D /* LoginViewModelTests.swift in Sources */,
 				C0FE093523FBAE8900D9024D /* CompaniesViewModelTests.swift in Sources */,
 				C0FE08E523FB178300D9024D /* UserTests.swift in Sources */,
 			);
