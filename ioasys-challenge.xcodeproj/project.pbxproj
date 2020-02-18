@@ -19,7 +19,6 @@
 		C0532C2A23F705FA002D59A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2923F705FA002D59A3 /* AppDelegate.swift */; };
 		C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C2B23F705FA002D59A3 /* SceneDelegate.swift */; };
 		C0532C3323F705FD002D59A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0532C3223F705FD002D59A3 /* Assets.xcassets */; };
-		C0532C4C23F705FE002D59A3 /* ioasys_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C4B23F705FE002D59A3 /* ioasys_challengeUITests.swift */; };
 		C0532C6323F7259F002D59A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6223F7259F002D59A3 /* LoginViewController.swift */; };
 		C0532C6623F725B9002D59A3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0532C6523F725B9002D59A3 /* Login.storyboard */; };
 		C0532C6823F725CE002D59A3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0532C6723F725CE002D59A3 /* LoginViewModel.swift */; };
@@ -34,18 +33,10 @@
 		C0FE093723FBB5C000D9024D /* ClientServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE093623FBB5C000D9024D /* ClientServer.swift */; };
 		C0FE093923FBB67A00D9024D /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE093823FBB67A00D9024D /* UITextFieldExt.swift */; };
 		C0FE093B23FBC14100D9024D /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE093A23FBC14100D9024D /* LoginViewModelTests.swift */; };
-		DEB7ED9F19B8DB3DDEDC2044 /* Pods_ioasys_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D966FB77E374B1905601AB /* Pods_ioasys_challengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		C0532C3D23F705FD002D59A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0532C1E23F705FA002D59A3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C0532C2523F705FA002D59A3;
-			remoteInfo = "ioasys-challenge";
-		};
-		C0532C4823F705FE002D59A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C0532C1E23F705FA002D59A3 /* Project object */;
 			proxyType = 1;
@@ -75,9 +66,6 @@
 		C0532C3723F705FD002D59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0532C3C23F705FD002D59A3 /* ioasys-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ioasys-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0532C4223F705FD002D59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0532C4723F705FE002D59A3 /* ioasys-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ioasys-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0532C4B23F705FE002D59A3 /* ioasys_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasys_challengeUITests.swift; sourceTree = "<group>"; };
-		C0532C4D23F705FE002D59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0532C6223F7259F002D59A3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C0532C6523F725B9002D59A3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		C0532C6723F725CE002D59A3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -111,14 +99,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9072BA3DE0348DD7477C8658 /* Pods_ioasys_challengeTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0532C4423F705FE002D59A3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEB7ED9F19B8DB3DDEDC2044 /* Pods_ioasys_challengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +158,6 @@
 			children = (
 				C0532C2823F705FA002D59A3 /* ioasys-challenge */,
 				C0532C3F23F705FD002D59A3 /* ioasys-challengeTests */,
-				C0532C4A23F705FE002D59A3 /* ioasys-challengeUITests */,
 				C0532C2723F705FA002D59A3 /* Products */,
 				F9FF5C7916CA6C1A3E886F4D /* Pods */,
 				94D4DF73081D4BACE66F6BEC /* Frameworks */,
@@ -190,7 +169,6 @@
 			children = (
 				C0532C2623F705FA002D59A3 /* ioasys-challenge.app */,
 				C0532C3C23F705FD002D59A3 /* ioasys-challengeTests.xctest */,
-				C0532C4723F705FE002D59A3 /* ioasys-challengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,15 +195,6 @@
 				C0532C4223F705FD002D59A3 /* Info.plist */,
 			);
 			path = "ioasys-challengeTests";
-			sourceTree = "<group>";
-		};
-		C0532C4A23F705FE002D59A3 /* ioasys-challengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C0532C4B23F705FE002D59A3 /* ioasys_challengeUITests.swift */,
-				C0532C4D23F705FE002D59A3 /* Info.plist */,
-			);
-			path = "ioasys-challengeUITests";
 			sourceTree = "<group>";
 		};
 		C0532C5923F7068B002D59A3 /* Models */ = {
@@ -356,25 +325,6 @@
 			productReference = C0532C3C23F705FD002D59A3 /* ioasys-challengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C0532C4623F705FE002D59A3 /* ioasys-challengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0532C5623F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challengeUITests" */;
-			buildPhases = (
-				3A15A4CB14BE3FA027680264 /* [CP] Check Pods Manifest.lock */,
-				C0532C4323F705FE002D59A3 /* Sources */,
-				C0532C4423F705FE002D59A3 /* Frameworks */,
-				C0532C4523F705FE002D59A3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C0532C4923F705FE002D59A3 /* PBXTargetDependency */,
-			);
-			name = "ioasys-challengeUITests";
-			productName = "ioasys-challengeUITests";
-			productReference = C0532C4723F705FE002D59A3 /* ioasys-challengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -389,10 +339,6 @@
 						CreatedOnToolsVersion = 11.2;
 					};
 					C0532C3B23F705FD002D59A3 = {
-						CreatedOnToolsVersion = 11.2;
-						TestTargetID = C0532C2523F705FA002D59A3;
-					};
-					C0532C4623F705FE002D59A3 = {
 						CreatedOnToolsVersion = 11.2;
 						TestTargetID = C0532C2523F705FA002D59A3;
 					};
@@ -413,7 +359,6 @@
 			targets = (
 				C0532C2523F705FA002D59A3 /* ioasys-challenge */,
 				C0532C3B23F705FD002D59A3 /* ioasys-challengeTests */,
-				C0532C4623F705FE002D59A3 /* ioasys-challengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -438,13 +383,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0532C4523F705FE002D59A3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -463,28 +401,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ioasys-challenge/Pods-ioasys-challenge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3A15A4CB14BE3FA027680264 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ioasys-challengeUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		66C812312E17C6B2B3EC98B9 /* [CP] Check Pods Manifest.lock */ = {
@@ -567,14 +483,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0532C4323F705FE002D59A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0532C4C23F705FE002D59A3 /* ioasys_challengeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -582,11 +490,6 @@
 			isa = PBXTargetDependency;
 			target = C0532C2523F705FA002D59A3 /* ioasys-challenge */;
 			targetProxy = C0532C3D23F705FD002D59A3 /* PBXContainerItemProxy */;
-		};
-		C0532C4923F705FE002D59A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C0532C2523F705FA002D59A3 /* ioasys-challenge */;
-			targetProxy = C0532C4823F705FE002D59A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -789,48 +692,6 @@
 			};
 			name = Release;
 		};
-		C0532C5723F705FE002D59A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CF81EBD6ACA1881175230DA /* Pods-ioasys-challengeUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2J564QJA4;
-				INFOPLIST_FILE = "ioasys-challengeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "gabrielrodrigues.ioasys-challengeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "ioasys-challenge";
-			};
-			name = Debug;
-		};
-		C0532C5823F705FE002D59A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 383C1052CE99D9F25925614E /* Pods-ioasys-challengeUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2J564QJA4;
-				INFOPLIST_FILE = "ioasys-challengeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "gabrielrodrigues.ioasys-challengeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "ioasys-challenge";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -857,15 +718,6 @@
 			buildConfigurations = (
 				C0532C5423F705FE002D59A3 /* Debug */,
 				C0532C5523F705FE002D59A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C0532C5623F705FE002D59A3 /* Build configuration list for PBXNativeTarget "ioasys-challengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0532C5723F705FE002D59A3 /* Debug */,
-				C0532C5823F705FE002D59A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
