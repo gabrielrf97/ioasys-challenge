@@ -14,9 +14,4 @@ target 'ioasys-challenge' do
     # Pods for testing
   end
 
-  target 'ioasys-challengeUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

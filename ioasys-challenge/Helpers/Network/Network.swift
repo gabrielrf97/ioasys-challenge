@@ -50,7 +50,8 @@ class Network {
                     case -1004:
                         completion(.failure(error: "We could not connect to the server"))
                     default:
-                        completion(.failure(error: "\(String(data: response.data!, encoding: .utf8))"))
+                        let errorMessage = String(data: response.data!, encoding: .utf8)
+                        completion(.failure(error: errorMessage ?? ""))
                     }
                     
                     return

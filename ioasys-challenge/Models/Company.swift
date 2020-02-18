@@ -57,7 +57,7 @@ class Company: Decodable {
 extension Company {
     static func getMocked(count: Int) -> [Company] {
         var companies = [Company]()
-        for index in 0..<count {
+        for _ in 0..<count {
             companies.append(Company.mocked())
         }
         return companies
