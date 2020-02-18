@@ -2,6 +2,11 @@
 
 Fala pessoal da ioasys, nest repo está minha solução pro challenge proposto por vocês.
 
+Usei 2 pods, então não se esqueça de rodar:
+```
+pod install
+```
+
 Algumas informações para adicionar facilidade a avaliação:
 - A arquitetura utilizada foi MVVM.
 - O usuário está sendo perpetuado no device, ou seja, só se precisa fazer login 1 vez.
