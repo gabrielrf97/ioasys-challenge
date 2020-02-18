@@ -17,8 +17,11 @@ protocol LoginViewDelegate: class {
 class LoginViewModel {
     
     weak var viewDelegate: LoginViewDelegate?
+    let serverDelegate: ClientServer
     
-    init() {}
+    init(server: ClientServer = AppClientServer()) {
+        self.serverDelegate = server
+    }
     
     func tryLogin(with email: String, password: String) {
         var errors = [String]()
@@ -46,13 +49,9 @@ class LoginViewModel {
     
     func performLogin(with email: String, _ password: String) {
         
-        let params : [String:Any] = ["email":email,
-                      "password":password]
-        
-        Network.shared.request(.login, parameters: params, model: User.self, completion: { response in
+        serverDelegate.login(email: email, password: password, completion: { response in
             switch response {
-            case .success(let response):
-                AppAuth.shared.signin(email: email, password: password, client: response.client, token: response.token)
+            case .success:
                 self.viewDelegate?.performedLoginSucessfuly()
             case .failure(let error):
                 self.viewDelegate?.loginAttemptFailed(with: error)

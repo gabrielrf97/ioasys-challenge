@@ -26,23 +26,26 @@ struct CompanyInfo {
 class CompaniesViewModel {
     
     weak var companiesDelegate: CompaniesViewDelegate?
+    let serverDelegate: ClientServer
+    
     var companiesInfo = [CompanyInfo]()
     
-    init() {}
+    
+    init(server: ClientServer = AppClientServer()) {
+        self.serverDelegate = server
+    }
     
     func fetchCompanies(containing string: String) {
-        
-        let params : Parameters = ["name": string]
-        Network.shared.request(Router.getCompany, parameters: params, model: Companies.self, completion: { response in
+        if string.isEmpty { return }
+        serverDelegate.requestCompanies(with: string, completion: { response in
             switch response {
-            case .success(let response):
-                guard let enterprises = response.model?.enterprises else {
-                    return
+            case .success(let companies):
+                if let _companies = companies {
+                    self.castModelToViewType(enterprises: _companies)
+                    self.companiesDelegate?.updateView(companies: self.companiesInfo)
                 }
-                self.castModelToViewType(enterprises: enterprises)
-                self.companiesDelegate?.updateView(companies: self.companiesInfo)
-                break
-            case .failure(let error):
+            case .failure( _):
+//TO-DO: Present error message
                 break
             }
         })

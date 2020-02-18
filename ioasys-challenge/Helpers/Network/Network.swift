@@ -12,6 +12,11 @@ import Alamofire
 
 typealias Parameters = [String : Any]
 
+enum NetworkLayerResult<Model> {
+    case success (model: Model?)
+    case failure (error: String)
+}
+
 enum NetworkResult<Model> {
     case success (model: Model?, client: String, token: String)
     case failure (error: String)

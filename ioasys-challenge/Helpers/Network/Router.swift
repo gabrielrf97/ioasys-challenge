@@ -12,7 +12,7 @@ import Alamofire
 enum Router {
     
     case login
-    case getCompany
+    case getCompanies
     
     static var domain = "https://empresas.ioasys.com.br/api"
     
@@ -29,14 +29,14 @@ enum Router {
     var path: String {
         switch self {
         case .login: return "/users/auth/sign_in"
-        case .getCompany: return "/enterprises"
+        case .getCompanies: return "/enterprises"
         }
     }
     
     var method: HTTPMethod {
         switch self {
             case .login: return .post
-            case .getCompany: return .get
+            case .getCompanies: return .get
         }
     }
     

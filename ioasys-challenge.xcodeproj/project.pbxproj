@@ -30,6 +30,8 @@
 		C0FE08D823F9B26C00D9024D /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */; };
 		C0FE08DA23FAEDB200D9024D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08D923FAEDB200D9024D /* Company.swift */; };
 		C0FE08E523FB178300D9024D /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE08E423FB178300D9024D /* UserTests.swift */; };
+		C0FE093523FBAE8900D9024D /* CompaniesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE093423FBAE8900D9024D /* CompaniesViewModelTests.swift */; };
+		C0FE093723FBB5C000D9024D /* ClientServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE093623FBB5C000D9024D /* ClientServer.swift */; };
 		DEB7ED9F19B8DB3DDEDC2044 /* Pods_ioasys_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D966FB77E374B1905601AB /* Pods_ioasys_challengeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		C0FE08D723F9B26C00D9024D /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
 		C0FE08D923FAEDB200D9024D /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		C0FE08E423FB178300D9024D /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		C0FE093423FBAE8900D9024D /* CompaniesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesViewModelTests.swift; sourceTree = "<group>"; };
+		C0FE093623FBB5C000D9024D /* ClientServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientServer.swift; sourceTree = "<group>"; };
 		D897469708DC0988330FEE3A /* Pods-ioasys-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8C6E78E2FC5ADFBE3C6265A /* Pods-ioasys-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-ioasys-challengeTests/Pods-ioasys-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E65FDA937353031F877CF1EC /* Pods_ioasys_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioasys_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +208,7 @@
 		C0532C3F23F705FD002D59A3 /* ioasys-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				C0FE093323FBAE6200D9024D /* ViewModels */,
 				C0FE08E323FB16DC00D9024D /* Models */,
 				C0532C4223F705FD002D59A3 /* Info.plist */,
 			);
@@ -262,6 +267,7 @@
 			children = (
 				C0FE08D023F89D2F00D9024D /* Network.swift */,
 				C0FE08D123F89D2F00D9024D /* Router.swift */,
+				C0FE093623FBB5C000D9024D /* ClientServer.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -280,6 +286,14 @@
 				C0FE08E423FB178300D9024D /* UserTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C0FE093323FBAE6200D9024D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C0FE093423FBAE8900D9024D /* CompaniesViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F9FF5C7916CA6C1A3E886F4D /* Pods */ = {
@@ -530,6 +544,7 @@
 				C0FE08D223F89D2F00D9024D /* Network.swift in Sources */,
 				C00C18C223F750D900C13B6B /* CompaniesViewModel.swift in Sources */,
 				C00C18CE23F7ABB300C13B6B /* CompanyViewController.swift in Sources */,
+				C0FE093723FBB5C000D9024D /* ClientServer.swift in Sources */,
 				C0FE08DA23FAEDB200D9024D /* Company.swift in Sources */,
 				C0532C2C23F705FA002D59A3 /* SceneDelegate.swift in Sources */,
 			);
@@ -539,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0FE093523FBAE8900D9024D /* CompaniesViewModelTests.swift in Sources */,
 				C0FE08E523FB178300D9024D /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
